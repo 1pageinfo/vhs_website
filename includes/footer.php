@@ -2,15 +2,35 @@
 <footer class="main-footer">
 	<div class="main-footer_bg" style="background: linear-gradient(135deg, #0f3f73 0%, #1463B6 50%, #38BDF8 100%);"></div>
 	<div class="auto-container">
+		<div class="footer-topbar d-flex justify-content-between align-items-center flex-wrap">
+			<div class="footer-topbar_content">
+				<div class="footer-topbar_label">Engineering Excellence Since 2018</div>
+				<h3>Need reliable structural engineering support for your next project?</h3>
+			</div>
+			<div class="footer-topbar_actions d-flex align-items-center flex-wrap">
+				<div class="footer-topbar_points">
+					<span>ISO 9001:2015</span>
+					<span>Global Delivery</span>
+					<span>Code-Compliant Output</span>
+				</div>
+				<a href="/vhs_website/contact.html" class="footer-cta-btn">Get Project Proposal</a>
+			</div>
+		</div>
+
 		<!-- Widgets Section -->
 		<div class="widgets-section">
 			<div class="row clearfix">
 
 				<!-- Column 1: Logo & Company Info -->
-				<div class="main-footer_column col-lg-3 col-md-6 col-sm-12">
+				<div class="main-footer_column col-lg-4 col-md-12 col-sm-12">
 					<div class="logo-widget">
 						<div class="main-footer_logo"><a href="/vhs_website/index.html"><img src="/vhs_website/images/LOGO.png" alt="VHS Engineering" title="VHS Engineering"></a></div>
 						<div class="main-footer_text">ISO 9001-2015 certified structural steel design and detailing company delivering world-class engineering solutions across diverse project types.</div>
+						<ul class="footer-business-list">
+							<li>Structural Design and Consultancy</li>
+							<li>Steel Detailing and Connection Design</li>
+							<li>BIM and Pre-Bid Engineering Services</li>
+						</ul>
 						<!-- Social Box -->
 						<div class="main-footer_socials">
 							<span>Follow Us:</span>
@@ -25,7 +45,7 @@
 				<!-- Column 2: Services -->
 				<div class="main-footer_column col-lg-3 col-md-6 col-sm-12">
 					<div class="links-widget">
-						<h4 class="main-footer_title">Services</h4>
+						<h4 class="main-footer_title">Core Services</h4>
 						<ul class="main-footer_links">
 							<li><a href="/vhs_website/structural-design-and-consultancy.html">Structural Design & Consultancy</a></li>
 							<li><a href="/vhs_website/bim-services.html">BIM Services</a></li>
@@ -39,9 +59,9 @@
 				</div>
 
 				<!-- Column 3: Useful Links -->
-				<div class="main-footer_column col-lg-3 col-md-6 col-sm-12">
+				<div class="main-footer_column col-lg-2 col-md-6 col-sm-12">
 					<div class="links-widget">
-						<h4 class="main-footer_title">Useful Links</h4>
+						<h4 class="main-footer_title">Standards</h4>
 						<ul class="main-footer_links">
 							<li><a href="https://www.nisd.org/" target="_blank">NISD</a></li>
 							<li><a href="https://www.aisc.org/" target="_blank">AISC</a></li>
@@ -56,8 +76,8 @@
 				<!-- Column 4: Contact Us -->
 				<div class="main-footer_column col-lg-3 col-md-6 col-sm-12">
 					<div class="contact-widget">
-						<h4 class="main-footer_title">Contact Us</h4>
-						<ul class="main-footer_links">
+						<h4 class="main-footer_title">Contact Desk</h4>
+						<ul class="main-footer_links contact-list">
 							<li>
 								<span class="contact-icon"><i class="fa-solid fa-phone fa-fw"></i></span>
 								<a href="tel:+917588639200">+91 7588639200</a>
