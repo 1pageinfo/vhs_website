@@ -4,8 +4,12 @@
 
 :root {
 	
-	/* #ff650c in decimal RGB */
-    --main-color: rgb(255,101,12);
-	--main-color-rgb:255,101,12;
+	/* #1463B6 in decimal RGB */
+    --main-color: rgb(20,99,182);
+	--main-color-rgb:20,99,182;
+
+	/* #38BDF8 in decimal RGB */
+	--color-two: rgb(56,189,248);
+	--color-two-rgb:56,189,248;
 	
 }
