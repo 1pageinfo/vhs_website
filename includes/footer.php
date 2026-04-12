@@ -1,6 +1,6 @@
 <!-- Main Footer -->
 <footer class="main-footer">
-	<div class="main-footer_bg" style="background: linear-gradient(135deg, #0f3f73 0%, #1463B6 50%, #38BDF8 100%);"></div>
+	<div class="main-footer_bg" style="background: linear-gradient(135deg, #05070d 0%, #0a1220 48%, #111b2e 100%);"></div>
 	<div class="auto-container">
 		<div class="footer-topbar d-flex justify-content-between align-items-center flex-wrap">
 			<div class="footer-topbar_content">
