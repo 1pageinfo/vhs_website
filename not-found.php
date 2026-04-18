@@ -1,0 +1,111 @@
+﻿<?php include('header.php'); ?>
+
+	
+	<!-- About Sidebar -->
+	<div class="about-sidebar">
+		<div class="gradient-layer"></div>
+		<!-- Close Button -->
+		<div class="close-sidebar-widget close-button">
+			<span class="fa-solid fa-xmark fa-fw"></span>
+		</div>
+		<div class="sidebar-inner">
+			<div class="upper-box">
+				<div class="image">
+					<img src="assets/images/resource/about-1.jpg" alt="" />
+				</div>
+				<div class="content-box">
+					<h3>About <span>VHS Engineering</span></h3>
+					<div class="text">VHS Engineering delivers reliable structural engineering solutions with a strong focus on quality, coordination, and project outcomes.</div>
+					<ul class="about-sidebar_list">
+<li>Structural Design & Consultancy</li>
+<li>BIM Services</li>
+<li>Estimodelling & Pre-Bid Services</li>
+<li>Connection Design Services</li>
+<li>Steel Detailing Services</li>
+<li>Deputation Services</li>
+<li>Other Engineering Services</li>
+</ul>
+				</div>
+			</div>
+			<!-- Social Box -->
+			<div class="social-box">
+				<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+				<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+	<!-- End About Sidebar -->
+
+	<!-- Page Title -->
+    <section class="page-title" style="background-image:url(assets/images/background/6.jpg)">
+        <div class="auto-container">
+			<h2>Error 404</h2>
+			<div class="d-flex justify-content-between align-items-center flex-wrap">
+				<ul class="bread-crumb clearfix">
+					<li><a href="index.php">Home</a></li>
+					<li>404</li>
+				</ul>
+				<div class="page-title_text">Professional engineering services aligned to your project scope, schedule, and quality requirements.</div>
+			</div>
+        </div>
+    </section>
+    <!-- End Page Title -->
+	
+	<!-- Clients Box One -->
+	<div class="clients-box_one style-two">
+		<div class="clients-one_slider swiper-container">
+			<div class="swiper-wrapper">
+				
+				<!-- Slide -->
+				<div class="swiper-slide">
+					<div class="client-image">
+						<a href="#"><img src="assets/images/clients/1.png" alt="" /></a>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="swiper-slide">
+					<div class="client-image">
+						<a href="#"><img src="assets/images/clients/2.png" alt="" /></a>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="swiper-slide">
+					<div class="client-image">
+						<a href="#"><img src="assets/images/clients/3.png" alt="" /></a>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="swiper-slide">
+					<div class="client-image">
+						<a href="#"><img src="assets/images/clients/4.png" alt="" /></a>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="swiper-slide">
+					<div class="client-image">
+						<a href="#"><img src="assets/images/clients/3.png" alt="" /></a>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div class="text-center">
+			<div class="client-one_subtitle">we're proud to partner with best-in-class clients</div>
+		</div>
+		
+	</div>
+	<!-- End Clients Box One -->
+	
+	
+<?php include('footer.php'); ?>
+
+
+

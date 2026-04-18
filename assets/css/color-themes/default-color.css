@@ -4,12 +4,40 @@
 
 :root {
 	
-	/* #1463B6 in decimal RGB */
-    --main-color: rgb(20,99,182);
-	--main-color-rgb:20,99,182;
+	/* VHS logo blue in decimal RGB */
+	--main-color: rgb(0,93,185);
+	--main-color-rgb: 0,93,185;
 
-	/* #38BDF8 in decimal RGB */
-	--color-two: rgb(56,189,248);
-	--color-two-rgb:56,189,248;
+	/* Secondary logo blue and limited accent orange */
+	--logo-color-deep: rgb(0,72,150);
+	--logo-color-light: rgb(10,122,214);
+	--accent-orange-color: rgb(247,167,62);
+	--accent-orange-rgb: 247,167,62;
 	
+}
+
+/* Keep orange as a small accent (~5%) across utility/details */
+.progress-wrap::after,
+.progress-wrap svg.progress-circle path,
+.main-footer_links li a:before,
+.contact-icon {
+	color: var(--accent-orange-color);
+}
+
+.main-footer_links li a:before {
+	background-color: rgba(var(--accent-orange-rgb), 1);
+}
+
+.progress-wrap svg.progress-circle path {
+	stroke: rgba(var(--accent-orange-rgb), 1);
+}
+
+.contact-icon {
+	border-color: rgba(var(--accent-orange-rgb), 0.45);
+	color: rgba(var(--accent-orange-rgb), 1);
+}
+
+.main-footer_socials a:hover {
+	border-color: rgba(var(--accent-orange-rgb), 1);
+	background-color: rgba(var(--accent-orange-rgb), 1);
 }

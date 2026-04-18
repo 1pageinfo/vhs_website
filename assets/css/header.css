@@ -11,7 +11,7 @@
 .main-header{
 	position:absolute;
 	left: 0px;
-	top: 40px;
+	top: 0px;
 	right: 0px;
 	z-index:1001;
 	width:100%;
@@ -29,21 +29,22 @@
 
 .main-header.header-style-one .header-lower .inner-container{
     position: relative;
-	padding:0px 20px;
-	border-radius:50px;
-	background-color:rgba(var(--white-color-rgb), 1);
+	padding:0px;
+	border-radius:0px;
+	background-color:transparent;
 }
 
 .main-header.header-style-one.fixed-header .header-lower .inner-container{
 	padding:0px 0px;
 	border:none;
-	background:none;
+	background:transparent;
 }
 
 /* Header Upper */
 
 .main-header .header-lower{
 	position: relative;
+	background-color:rgba(var(--white-color-rgb), 1);
 	transition:all 900ms ease;
 	-moz-transition:all 900ms ease;
 	-webkit-transition:all 900ms ease;

@@ -74,13 +74,13 @@
 
 :root {
 	
-	/* #1463B6 in decimal RGB */
-	--main-color: rgb(20,99,182);
-	--main-color-rgb:20,99,182;
+	/* #ff650c in decimal RGB */
+	--main-color: rgb(255,101,12);
+	--main-color-rgb:255,101,12;
 	
-	/* #38BDF8 in decimal RGB */
-	--color-two: rgb(56,189,248);
-	--color-two-rgb:56,189,248;
+	/* #C115EC in decimal RGB */
+	--color-two: rgb(193,21,236);
+	--color-two-rgb:193,21,236;
 	
 
 
@@ -156,101 +156,6 @@ body {
 .dark-layout{
 	position: relative;
 	background-color: var(--black-color);
-}
-
-/* Preloader */
-.preloader {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-	background: linear-gradient(135deg, rgba(20, 99, 182, 1) 0%, rgba(56, 189, 248, 1) 100%);
-    z-index: 9999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transition: opacity 0.5s ease;
-}
-
-.loader {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.outer-circle {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.8);
-    animation: pulse 1.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.inner-circle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
-    animation: reverse-pulse 1.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: white;
-    animation: bounce 1.5s infinite cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Keyframe Animations */
-@keyframes pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.8;
-    }
-    50% {
-        transform: scale(1.3);
-        opacity: 0.4;
-    }
-}
-
-@keyframes reverse-pulse {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.6;
-    }
-    50% {
-        transform: scale(0.7);
-        opacity: 0.8;
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0) scale(1);
-    }
-    25% {
-        transform: translateY(-15px) scale(1.1);
-    }
-    50% {
-        transform: translateY(0) scale(1);
-    }
-    75% {
-        transform: translateY(5px) scale(0.9);
-    }
-}
-
-/* For smoother transitions */
-.preloader.fade-out {
-    opacity: 0;
 }
 
 

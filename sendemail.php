@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 // Define some constants
 define( "RECIPIENT_NAME", "VHS Engineering" );
@@ -42,3 +42,4 @@ else{
 }
 
 ?>
+

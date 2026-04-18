@@ -147,7 +147,7 @@
 }
 
 .palate.default-color {
-	background: #1463B6 none repeat scroll 0 0;
+	background: linear-gradient(90deg, #005db9 0%, #005db9 95%, #f7a73e 95%, #f7a73e 100%) no-repeat;
 }
 
 .palate.blue-color {
@@ -171,7 +171,7 @@
 }
 
 .palate.orange-color {
-	background: #38BDF8 none repeat scroll 0 0;
+    background: #f7a73e none repeat scroll 0 0;
 }
 
 .palate.yellow-color {
