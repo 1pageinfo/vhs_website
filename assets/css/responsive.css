@@ -325,6 +325,12 @@
 		margin-top:120px;
 	}
 	
+	.project-one .project-block_one-overlay{
+		top:56px;
+		left:48px;
+		right:48px;
+	}
+
 	.project-block_one-overlay{
 		top:70px;
 	}
@@ -821,6 +827,24 @@
 		line-height: 70px;
 		font-size: 60px;
 	}
+
+	.project-one .project-block_one-image img{
+		height:420px;
+		border-radius:24px;
+	}
+
+	.project-one .project-block_one-overlay_inner{
+		padding:26px 22px 24px;
+	}
+
+	.project-one .project-block_one-heading{
+		font-size:34px;
+		line-height:1.15em;
+	}
+
+	.project-one .project-block_one-text{
+		line-height:24px;
+	}
 	
 	.project-block_one-overlay{
 		position:relative;
@@ -993,6 +1017,18 @@
 	h2 {
 		line-height: 44px;
 		font-size: 34px;
+	}
+
+	.project-one{
+		padding:70px 0px 55px;
+	}
+
+	.project-one .project-block_one-image img{
+		height:360px;
+	}
+
+	.project-one .project-block_one-heading{
+		font-size:30px;
 	}
 	
 	.project-block_one-arrow{
@@ -1355,6 +1391,28 @@
 	h1 {
 		line-height: 50px;
 		font-size: 40px;
+	}
+
+	.project-one{
+		padding:56px 0px 45px;
+	}
+
+	.project-one .project-block_one-image img{
+		height:280px;
+		border-radius:18px;
+	}
+
+	.project-one .project-block_one-overlay_inner{
+		padding:22px 18px 20px;
+	}
+
+	.project-one .project-block_one-heading{
+		font-size:24px;
+	}
+
+	.project-one .project-block_one-location,
+	.project-one .project-block_one-title{
+		font-size:14px;
 	}
 	
 	.shop-detail_title,

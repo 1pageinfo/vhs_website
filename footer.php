@@ -1,4 +1,4 @@
-﻿<!-- Main Footer -->
+<!-- Main Footer -->
 <footer class="main-footer">
 <div class="main-footer_bg" style="background-image:url(assets/images/section/footer-bg.svg)"></div>
 <div class="auto-container">

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Abstract construction geometry">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#13212d"/>
+      <stop offset="100%" stop-color="#2f3f4c"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd58a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffb347" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg2)"/>
+  <g fill="url(#beam)">
+    <polygon points="120,760 520,220 700,220 300,760"/>
+    <polygon points="520,760 920,160 1100,160 700,760"/>
+    <polygon points="920,760 1280,260 1460,260 1100,760"/>
+  </g>
+  <g stroke="#ffffff" stroke-opacity="0.15" stroke-width="2" fill="none">
+    <path d="M0 820 H1600"/>
+    <path d="M0 640 H1600"/>
+    <path d="M0 460 H1600"/>
+    <path d="M180 0 V900"/>
+    <path d="M520 0 V900"/>
+    <path d="M860 0 V900"/>
+    <path d="M1200 0 V900"/>
+  </g>
+</svg>

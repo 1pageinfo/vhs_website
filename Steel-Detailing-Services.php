@@ -1,4 +1,4 @@
-﻿<?php include('header.php'); ?>
+<?php include('header.php'); ?>
 
 	
 	<!-- About Sidebar -->
@@ -11,7 +11,7 @@
 		<div class="sidebar-inner">
 			<div class="upper-box">
 				<div class="image">
-					<img src="assets/images/resource/about-1.jpg" alt="" />
+					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 				</div>
 				<div class="content-box">
 					<h3>About <span>VHS Engineering</span></h3>
@@ -39,7 +39,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-    <section class="page-title" style="background-image:url(assets/images/section/service-steel.svg)">
+	<section class="page-title" style="background-image:url('images/commercial%20projects.png')">
         <div class="auto-container">
 			<h2>Steel Detailing Services</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -87,7 +87,7 @@
 					<div class="service-detail">
 						<div class="service-detail_inner">
 							<div class="service-detail_image">
-								<img src="assets/images/section/service-steel.svg" alt="Steel Detailing Services" />
+								<img src="images/commercial%20projects.png" alt="Steel Detailing Services" />
 								<div class="service-detail_tag">
 									<span>Steel Detailing</span>
 								</div>
@@ -246,6 +246,7 @@
 	
 	
 <?php include('footer.php'); ?>
+
 
 
 

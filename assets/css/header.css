@@ -288,16 +288,17 @@
 	position: fixed;
 	left: 0px;
 	top: 0px;
+	margin-top: 0px;
 	right: 0px;
 	z-index:9999999;
 	opacity:1;
 	visibility:visible;
 	background-color: var(--white-color);
-	-ms-animation-name: fadeInDown;
-	-moz-animation-name: fadeInDown;
-	-op-animation-name: fadeInDown;
-	-webkit-animation-name: fadeInDown;
-	animation-name: fadeInDown;
+	-ms-animation-name: none;
+	-moz-animation-name: none;
+	-op-animation-name: none;
+	-webkit-animation-name: none;
+	animation-name: none;
 	-ms-animation-duration: 500ms;
 	-moz-animation-duration: 500ms;
 	-op-animation-duration: 500ms;
@@ -320,6 +321,14 @@
 	-webkit-transition:all 900ms ease;
 	-ms-transition:all 900ms ease;
 	-o-transition:all 900ms ease;
+}
+
+.main-header.fixed-header{
+	top: 0px !important;
+}
+
+.main-header.fixed-header .header-lower{
+	top: 0px !important;
 }
 
 .main-header .main-menu .navigation > li > a{
@@ -2130,7 +2139,9 @@
 	display: none;
 }
 
-.want-sticky-header .fixed-header {
-    position: relative;
-    display: none;
+
+.want-sticky-header .main-header .sticky-header {
+	position: fixed;
+	display: none;
+	top: 0px;
 }

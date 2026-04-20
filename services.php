@@ -1,4 +1,4 @@
-﻿<?php include('header.php'); ?>
+<?php include('header.php'); ?>
 
 	
 	<!-- About Sidebar -->
@@ -11,7 +11,7 @@
 		<div class="sidebar-inner">
 			<div class="upper-box">
 				<div class="image">
-					<img src="assets/images/resource/about-1.jpg" alt="" />
+					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 				</div>
 				<div class="content-box">
 					<h3>About <span>VHS Engineering</span></h3>
@@ -39,7 +39,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-    <section class="page-title" style="background-image:url(assets/images/section/page-services-hero.svg)">
+	<section class="page-title" style="background-image:url('images/about%20banner.jpg')">
         <div class="auto-container">
 			<h2>Our Services</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -67,7 +67,7 @@
 <!-- Service Block Three -->
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-structural.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/about%20banner.jpg')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-1.svg" alt="Structural Design & Consultancy" /></div>
@@ -80,7 +80,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-bim.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/2024-10-20.webp')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-2.svg" alt="BIM Services" /></div>
@@ -93,7 +93,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-estimodelling.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('assets/images/section/placeholder-structure-c.svg')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-3.svg" alt="Estimodelling & Pre-Bid Services" /></div>
@@ -106,7 +106,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-connection.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/slider%202.jpg')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-4.svg" alt="Connection Design Services" /></div>
@@ -119,7 +119,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-steel.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/commercial%20projects.png')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-5.svg" alt="Steel Detailing Services" /></div>
@@ -132,7 +132,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-deputation.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('assets/images/section/placeholder-structure-b.svg')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-6.svg" alt="Deputation Services" /></div>
@@ -145,7 +145,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url(assets/images/section/service-structural.svg)"></div>
+<div class="service-block_three_hover-image" style="background-image:url('assets/images/section/placeholder-structure-a.svg')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-1.svg" alt="Other Engineering Services" /></div>
@@ -235,7 +235,7 @@
 									</div>
 								<!-- Image -->
 								<div class="service-one_image two">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="images/2024-10-20.webp" alt="BIM services" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -252,7 +252,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image three">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-c.svg" alt="Estimodelling and pre-bid services" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -269,7 +269,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image four">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="images/slider%202.jpg" alt="Connection design services" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -286,7 +286,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image five">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-b.svg" alt="Deputation services" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -303,7 +303,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image six">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-a.svg" alt="Other engineering services" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -725,6 +725,7 @@
 	
 	
 <?php include('footer.php'); ?>
+
 
 
 

@@ -11,7 +11,7 @@
 		<div class="sidebar-inner">
 			<div class="upper-box">
 				<div class="image">
-					<img src="assets/images/section/about-main-1.svg" alt="" />
+					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 				</div>
 				<div class="content-box">
 					<h3>About <span>VHS Engineering</span></h3>
@@ -45,7 +45,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/section/home-hero-1.svg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/slider%201.jpg')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -73,7 +73,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/section/home-hero-2.svg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/slider%202.jpg')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -101,7 +101,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(assets/images/section/home-hero-3.svg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/slider%203.jpg')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -163,7 +163,7 @@
 						<div class="row clearfix">
 							<div class="column col-lg-4 col-md-6 col-sm-6">
 								<div class="image">
-									<img src="assets/images/section/about-main-1.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 								</div>
 								<div class="about-construction_image">
 									<img src="assets/images/icons/about.png" alt="" />
@@ -181,7 +181,7 @@
 							</div>
 							<div class="column col-lg-8 col-md-6 col-sm-6">
 								<div class="image">
-									<img src="assets/images/section/about-main-2.svg" alt="" />
+									<img src="images/about%20banner.jpg" alt="Construction site with crane" />
 								</div>
 							</div>
 						</div>
@@ -319,7 +319,7 @@
 							<div class="service-one_images_outer">
 								<!-- Image -->
 								<div class="service-one_image active">
-									<img src="assets/images/section/service-structural.svg" alt="" />
+									<img src="images/about%20banner.jpg" alt="Structural design and consultancy" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -336,7 +336,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image two">
-									<img src="assets/images/section/service-bim.svg" alt="" />
+									<img src="images/2024-10-20.webp" alt="BIM model view" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -353,7 +353,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image three">
-									<img src="assets/images/section/service-steel.svg" alt="" />
+									<img src="images/commercial%20projects.png" alt="Steel detailing project" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -370,7 +370,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image four">
-									<img src="assets/images/section/service-connection.svg" alt="" />
+									<img src="images/slider%202.jpg" alt="Connection design model" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -387,7 +387,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image five">
-									<img src="assets/images/section/service-estimodelling.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-c.svg" alt="Pre-bid planning and estimation" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -404,7 +404,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image six">
-									<img src="assets/images/section/service-deputation.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-b.svg" alt="Deputation services support engineer" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -421,7 +421,7 @@
 								</div>
 								<!-- Image -->
 								<div class="service-one_image seven">
-									<img src="assets/images/section/service-other.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-a.svg" alt="Other engineering support" />
 									<div class="service-one_content">
 										<!-- Button Box -->
 										<div class="service-one_button">
@@ -462,7 +462,7 @@
 				<div class="project-block_one">
 					<div class="project-block_one-inner">
 						<div class="project-block_one-image">
-							<img src="assets/images/section/project-commercial.svg" alt="" />
+							<img src="images/commercial%20projects.png" alt="Commercial project" />
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -484,7 +484,7 @@
 				<div class="project-block_one style-two">
 					<div class="project-block_one-inner">
 						<div class="project-block_one-image">
-							<img src="assets/images/section/project-education.svg" alt="" />
+							<img src="images/educational%20bldg.png" alt="Educational project" />
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -506,7 +506,7 @@
 				<div class="project-block_one">
 					<div class="project-block_one-inner">
 						<div class="project-block_one-image">
-							<img src="assets/images/section/project-offshore.svg" alt="" />
+							<img src="images/offshore.png" alt="Industrial and offshore project" />
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -528,7 +528,7 @@
 				<div class="project-block_one style-two">
 					<div class="project-block_one-inner">
 						<div class="project-block_one-image">
-							<img src="assets/images/section/project-recent.svg" alt="" />
+							<img src="images/recent%20project.png" alt="Recent project" />
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -777,6 +777,7 @@
 	
 	
 <?php include('footer.php'); ?>
+
 
 
 

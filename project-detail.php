@@ -1,4 +1,4 @@
-﻿<?php include('header.php'); ?>
+<?php include('header.php'); ?>
 
 	
 	<!-- About Sidebar -->
@@ -11,7 +11,7 @@
 		<div class="sidebar-inner">
 			<div class="upper-box">
 				<div class="image">
-					<img src="assets/images/resource/about-1.jpg" alt="" />
+					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 				</div>
 				<div class="content-box">
 					<h3>About <span>VHS Engineering</span></h3>
@@ -39,7 +39,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-    <section class="page-title" style="background-image:url(assets/images/section/page-project-detail-hero.svg)">
+	<section class="page-title" style="background-image:url('images/projects%20hero%20%281%29.png')">
         <div class="auto-container">
 			<h2>Project Details</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -59,7 +59,7 @@
 			<div class="project-detail_location"><i><img src="assets/images/icons/location.svg" alt="" /></i> Project Location</div>
 			<h2 class="project-detail_heading">Integrated Structural Project</h2>
 			<div class="project-detail_image">
-				<img src="assets/images/section/project-commercial.svg" alt="" />
+				<img src="images/commercial%20projects.png" alt="Commercial project detail" />
 			</div>
 			<ul class="project-detail_list">
 				<li>
@@ -74,7 +74,7 @@
 					<!-- Column -->
 					<div class="column col-lg-7 col-md-12 col-sm-12">
 						<div class="project-detail_image">
-							<img src="assets/images/section/project-education.svg" alt="" />
+							<img src="images/educational%20bldg.png" alt="Educational project detail" />
 						</div>
 					</div>
 					<!-- Column -->
@@ -165,6 +165,7 @@
 	
 	
 <?php include('footer.php'); ?>
+
 
 
 

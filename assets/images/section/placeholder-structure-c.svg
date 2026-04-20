@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Abstract blueprint pattern">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1724"/>
+      <stop offset="100%" stop-color="#1a2740"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg3)"/>
+  <g stroke="#6fb2ff" stroke-opacity="0.38" stroke-width="2" fill="none">
+    <circle cx="330" cy="280" r="150"/>
+    <circle cx="330" cy="280" r="95"/>
+    <circle cx="330" cy="280" r="40"/>
+    <rect x="620" y="150" width="760" height="520" rx="20"/>
+    <path d="M620 260 H1380 M620 370 H1380 M620 480 H1380 M620 590 H1380"/>
+    <path d="M760 150 V670 M900 150 V670 M1040 150 V670 M1180 150 V670"/>
+    <path d="M140 720 L540 720 L520 820 L120 820 Z"/>
+    <path d="M240 720 V820 M340 720 V820 M440 720 V820"/>
+  </g>
+  <g fill="#8cc9ff" fill-opacity="0.22">
+    <rect x="80" y="80" width="180" height="26" rx="13"/>
+    <rect x="280" y="80" width="140" height="26" rx="13"/>
+    <rect x="440" y="80" width="220" height="26" rx="13"/>
+  </g>
+</svg>

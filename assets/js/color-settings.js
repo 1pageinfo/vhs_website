@@ -15,16 +15,8 @@
 
 	
 	
-	var layoutChangerBtn = $(".color-palate .header-version li");
-	var body = $("body");
-	layoutChangerBtn.on("click", function(e) {
-        var $this = $(this);
-        if ( $this.hasClass("box") ) {
-            body.addClass("want-sticky-header");
-        } else {
-        	body.removeClass("want-sticky-header");
-    	};
-	});
+	// Keep one consistent sticky-header behavior across all pages.
+	$("body").removeClass("want-sticky-header");
 	
 	
 	

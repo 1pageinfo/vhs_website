@@ -1,4 +1,4 @@
-﻿<?php include('header.php'); ?>
+<?php include('header.php'); ?>
 
 	
 	<!-- About Sidebar -->
@@ -11,7 +11,7 @@
 		<div class="sidebar-inner">
 			<div class="upper-box">
 				<div class="image">
-					<img src="assets/images/resource/about-1.jpg" alt="" />
+					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 				</div>
 				<div class="content-box">
 					<h3>About <span>VHS Engineering</span></h3>
@@ -38,7 +38,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-    <section class="page-title" style="background-image:url(assets/images/section/page-about-hero.svg)">
+	<section class="page-title" style="background-image:url('images/about%20banner.jpg')">
         <div class="auto-container">
 			<h2>About VHS Engineering</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -70,7 +70,7 @@
 						<div class="row clearfix">
 							<div class="column col-lg-4 col-md-12 col-sm-12">
 								<div class="image">
-									<img src="assets/images/section/about-main-1.svg" alt="" />
+									<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
 									<div class="about-construction_image">
 										<img src="assets/images/icons/about.png" alt="" />
 									</div>
@@ -89,7 +89,7 @@
 							</div>
 							<div class="column col-lg-8 col-md-12 col-sm-12">
 								<div class="image">
-									<img src="assets/images/section/about-main-2.svg" alt="" />
+									<img src="images/about%20banner.jpg" alt="Construction site with tower crane" />
 								</div>
 							</div>
 						</div>
@@ -166,7 +166,7 @@
 					<!-- Customer Block One -->
 					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="customer-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url(assets/images/section/service-structural.svg)"></div>
+							<div class="customer-block_one-bg" style="background-image:url('images/about%20banner.jpg')"></div>
 							<div class="customer-block_one-number">01</div>
 							<div class="customer-block_one-icon">
 								<img src="assets/images/icons/customer-1.svg" alt="" />
@@ -180,7 +180,7 @@
 					<!-- Customer Block One -->
 					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="customer-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url(assets/images/section/service-steel.svg)"></div>
+							<div class="customer-block_one-bg" style="background-image:url('images/commercial%20projects.png')"></div>
 							<div class="customer-block_one-number">02</div>
 							<div class="customer-block_one-icon">
 								<img src="assets/images/icons/customer-2.svg" alt="" />
@@ -194,7 +194,7 @@
 					<!-- Customer Block One -->
 					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="customer-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url(assets/images/section/service-bim.svg)"></div>
+							<div class="customer-block_one-bg" style="background-image:url('images/2024-10-20.webp')"></div>
 							<div class="customer-block_one-number">03</div>
 							<div class="customer-block_one-icon">
 								<img src="assets/images/icons/customer-3.svg" alt="" />
@@ -272,13 +272,13 @@
 				<div class="about-three_images-column col-lg-6 col-md-12 col-sm-12">
 					<div class="about-three_images-outer">
 						<div class="about-three_image">
-							<img src="assets/images/section/project-commercial.svg" alt="" />
+							<img src="images/commercial%20projects.png" alt="Commercial project" />
 						</div>
 						<div class="about-three_image-two">
-							<img src="assets/images/section/project-education.svg" alt="" />
+							<img src="images/educational%20bldg.png" alt="Educational project" />
 						</div>
 						<div class="about-three_image-three">
-							<img src="assets/images/section/project-offshore.svg" alt="" />
+							<img src="images/offshore.png" alt="Offshore project" />
 						</div>
 						<div class="about-three_award">
 							<span><img src="assets/images/icons/award.svg" alt="" /></span>
@@ -489,7 +489,7 @@
 				<!-- Image Column -->
 				<div class="faq-one_image-column col-lg-5 col-md-6 col-sm-12">
 					<div class="faq-one_image">
-						<img src="assets/images/section/about-faq.svg" alt="" />
+						<img src="images/slider%201.jpg" alt="Engineering team coordination" />
 					</div>
 				</div>
 				
@@ -562,6 +562,7 @@
 	
 	
 <?php include('footer.php'); ?>
+
 
 
 

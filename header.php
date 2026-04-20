@@ -1,4 +1,11 @@
-﻿<?php if (!isset($base_path)) $base_path = ''; ?>
+<?php
+if (!isset($base_path) || $base_path === '') {
+	$script_dir = dirname($_SERVER['SCRIPT_NAME'] ?? '');
+	$script_dir = str_replace('\\', '/', $script_dir);
+	$script_dir = rtrim($script_dir, '/');
+	$base_path = ($script_dir === '' || $script_dir === '.') ? '/' : $script_dir . '/';
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
