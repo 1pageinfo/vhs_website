@@ -1,579 +1,636 @@
 <?php include('header.php'); ?>
 
-	
-	<!-- About Sidebar -->
-	<div class="about-sidebar">
-		<div class="gradient-layer"></div>
-		<!-- Close Button -->
-		<div class="close-sidebar-widget close-button">
-			<span class="fa-solid fa-xmark fa-fw"></span>
-		</div>
-		<div class="sidebar-inner">
-			<div class="upper-box">
-				<div class="image">
-					<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
-				</div>
-				<div class="content-box">
-					<h3>About <span>VHS Engineering</span></h3>
-					<div class="text">ISO 9001-2015 certified structural steel design and detailing company committed to quality, schedule, and professional communication for building strong customer relationships.</div>
-					<ul class="about-sidebar_list">
-						<li>Structural Steel Design</li>
-						<li>Steel Detailing Services</li>
-						<li>BIM Services</li>
-						<li>Connection Design</li>
-						<li>Estimodelling</li>
-						<li>Deputation Services</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Social Box -->
-			<div class="social-box">
-				<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-				<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-				<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-			</div>
-		</div>
-	</div>
-	<!-- End About Sidebar -->
+<style>
+.about-premium {
+    --steel-900: #0f1720;
+    --steel-850: #131e29;
+    --steel-800: #1a2734;
+    --steel-700: #263646;
+    --steel-500: #4f6e8f;
+    --steel-300: #b8c7d9;
+    --steel-200: #d8e1eb;
+    --spark: #f58f3d;
+    --spark-soft: rgba(245, 143, 61, 0.2);
+    --line: rgba(255, 255, 255, 0.09);
+    background: radial-gradient(circle at 90% 10%, rgba(79, 110, 143, 0.2), transparent 42%),
+        linear-gradient(180deg, #0f1720 0%, #141f2a 35%, #0f1720 100%);
+    color: #ffffff;
+}
 
-	<!-- Page Title -->
-	<section class="page-title" style="background-image:url('images/about%20banner.jpg')">
+.about-premium .auto-container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero {
+    position: relative;
+    padding: 120px 0 90px;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(15, 23, 32, 0.93) 0%, rgba(15, 23, 32, 0.72) 45%, rgba(15, 23, 32, 0.42) 100%),
+        url('images/about%20banner.jpg') center/cover no-repeat;
+}
+
+.about-hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 36px;
+    align-items: center;
+}
+
+.steel-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.steel-tag::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--spark);
+    box-shadow: 0 0 0 6px var(--spark-soft);
+}
+
+.about-hero h1 {
+    margin: 20px 0 14px;
+    font-size: 54px;
+    line-height: 1.06;
+    letter-spacing: -0.8px;
+    color: #f5f8fc;
+}
+
+.about-hero p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 760px;
+    color: var(--steel-200);
+}
+
+.hero-metrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.hero-metric {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px;
+    backdrop-filter: blur(2px);
+    animation: riseIn 0.7s ease both;
+}
+
+.hero-metric:nth-child(2) { animation-delay: 0.08s; }
+.hero-metric:nth-child(3) { animation-delay: 0.16s; }
+.hero-metric:nth-child(4) { animation-delay: 0.24s; }
+
+.hero-metric h3 {
+    margin: 0;
+    font-size: 34px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.hero-metric span {
+    display: block;
+    margin-top: 6px;
+    color: var(--steel-300);
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.steel-section {
+    padding: 88px 0;
+}
+
+.section-head {
+    margin-bottom: 34px;
+}
+
+.section-head h2 {
+    margin: 10px 0 0;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    color: #f3f7fb;
+}
+
+.section-head p {
+    margin: 14px 0 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--steel-300);
+}
+
+.about-story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.story-panel {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-panel::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--spark), transparent);
+}
+
+.story-panel h3 {
+    font-size: 25px;
+    margin: 0 0 12px;
+    color: #ffffff;
+}
+
+.story-panel p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--steel-300);
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.service-card {
+    background: var(--steel-850);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(245, 143, 61, 0.5);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.25);
+}
+
+.service-card .num {
+    color: var(--spark);
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.service-card h4 {
+    margin: 8px 0 8px;
+    font-size: 20px;
+    color: #f7f9fd;
+}
+
+.service-card p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--steel-300);
+}
+
+.quality-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 26px;
+    align-items: start;
+}
+
+.quality-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.quality-list li {
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 14px 16px 14px 44px;
+    position: relative;
+    color: var(--steel-200);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.quality-list li::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--spark);
+}
+
+.iso-card {
+    border-radius: 18px;
+    border: 1px solid rgba(245, 143, 61, 0.35);
+    background: linear-gradient(180deg, rgba(245, 143, 61, 0.16), rgba(245, 143, 61, 0.06));
+    padding: 26px;
+}
+
+.iso-card h3 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.iso-card p {
+    margin: 10px 0 0;
+    color: #f8d8bf;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.iso-logos {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.iso-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    min-height: 64px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.iso-logo img {
+    max-width: 100%;
+    max-height: 44px;
+    object-fit: contain;
+    filter: brightness(1.03) contrast(1.05);
+}
+
+.counter-strip {
+    background: linear-gradient(90deg, #111a24, #1a2838, #111a24);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 38px 0;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.counter-box {
+    text-align: center;
+    padding: 16px;
+    border-right: 1px solid var(--line);
+}
+
+.counter-box:last-child {
+    border-right: 0;
+}
+
+.counter-box h4 {
+    margin: 0;
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.counter-box p {
+    margin: 10px 0 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--steel-300);
+}
+
+.about-cta {
+    padding: 92px 0;
+    text-align: center;
+    position: relative;
+}
+
+.about-cta::before,
+.about-cta::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.about-cta::before {
+    left: -120px;
+    top: 20px;
+    background: rgba(79, 110, 143, 0.23);
+}
+
+.about-cta::after {
+    right: -120px;
+    bottom: 10px;
+    background: rgba(245, 143, 61, 0.2);
+}
+
+.about-cta .cta-inner {
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 46px 24px;
+}
+
+.about-cta h2 {
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.2;
+    color: #f5f8fc;
+}
+
+.about-cta p {
+    margin: 14px auto 26px;
+    max-width: 720px;
+    color: var(--steel-300);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-cta .theme-btn {
+    min-width: 220px;
+}
+
+@keyframes riseIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1199px) {
+    .about-hero h1,
+    .about-cta h2,
+    .section-head h2 {
+        font-size: 36px;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .about-hero {
+        padding: 96px 0 76px;
+    }
+
+    .about-hero-grid,
+    .about-story,
+    .quality-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counter-box {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .counter-box:nth-last-child(-n+2) {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-hero h1,
+    .about-cta h2,
+    .section-head h2 {
+        font-size: 30px;
+    }
+
+    .hero-metrics,
+    .service-grid,
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .counter-box {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .counter-box:last-child {
+        border-bottom: 0;
+    }
+
+    .iso-logos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+</style>
+
+<main class="about-premium">
+    <section class="about-hero">
         <div class="auto-container">
-			<h2>About VHS Engineering</h2>
-			<div class="d-flex justify-content-between align-items-center flex-wrap">
-				<ul class="bread-crumb clearfix">
-					<li><a href="index.php">Home</a></li>
-					<li>About VHS Engineering</li>
-				</ul>
-				<div class="page-title_text">Professional engineering services aligned to your project scope, schedule, and quality requirements.</div>
-			</div>
+            <div class="about-hero-grid">
+                <div>
+                    <span class="steel-tag">About VHS Engineering</span>
+                    <h1>Precision Steel Detailing for Buildable, On-Time Projects</h1>
+                    <p>VHS Engineering is an ISO 9001-2015 certified structural steel design and detailing company committed to quality, schedule, and clear communication to build strong customer relationships.</p>
+                </div>
+                <div class="hero-metrics">
+                    <div class="hero-metric">
+                        <h3>2017</h3>
+                        <span>Established</span>
+                    </div>
+                    <div class="hero-metric">
+                        <h3>7+</h3>
+                        <span>Years of Excellence</span>
+                    </div>
+                    <div class="hero-metric">
+                        <h3>100+</h3>
+                        <span>Projects Completed</span>
+                    </div>
+                    <div class="hero-metric">
+                        <h3>98%</h3>
+                        <span>Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End Page Title -->
 
-	<!-- About One -->
-	<section class="about-one">
-		<div class="about-one_pattern-layer" style="background-image:url(assets/images/background/pattern-1.png)"></div>
-		<div class="about-one_cap" style="background-image:url(assets/images/icons/about-cap.png)"></div>
-		<div class="auto-container">
-			<div class="sec-title title-anim">
-				<div class="sec-title_title">ABOUT VHS ENGINEERING</div>
-				<h2 class="sec-title_heading">Leading Structural Steel Design & Detailing Company</h2>
-			</div>
-			
-			<div class="row clearfix">
-			
-				<!-- Image Column -->
-				<div class="about-one_image-column col-lg-7 col-md-12 col-sm-12">
-					<div class="about-one_image-outer">
-						<div class="row clearfix">
-							<div class="column col-lg-4 col-md-12 col-sm-12">
-								<div class="image">
-									<img src="assets/images/section/placeholder-structure-a.svg" alt="VHS Engineering office" />
-									<div class="about-construction_image">
-										<img src="assets/images/icons/about.png" alt="" />
-									</div>
-								</div>
-								
-								<!-- Button Box -->
-								<div class="about-one_button">
-									<a href="about.php" class="theme-btn btn-style-three">
-										<span class="btn-wrap">
-											<span class="text-one">learn more <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-											<span class="text-two">learn more <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-										</span>
-									</a>
-								</div>
-								
-							</div>
-							<div class="column col-lg-8 col-md-12 col-sm-12">
-								<div class="image">
-									<img src="images/about%20banner.jpg" alt="Construction site with tower crane" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Content Column -->
-				<div class="about-one_content-column col-lg-5 col-md-12 col-sm-12">
-					<div class="about-one_content-outer">
-						
-						<!-- Feature Block One -->
-						<div class="feature-block_one">
-							<h4 class="feature-block_one-title">Our Mission</h4>
-							<div class="feature-block_one-text">We strive to provide high quality structural engineering services and solutions to our client base while utilising innovative technologies and stay focused on continuous improvement, highest business standards, work ethics leading to added value for our clients and partners.</div>
-						</div>
-						
-						<!-- Feature Block One -->
-						<div class="feature-block_one">
-							<h4 class="feature-block_one-title">Our Vision</h4>
-							<div class="feature-block_one-text">Our solutions are designed to meet the needs of modern enterprises, ensuring they thrive in today's competitive online landscape.</div>
-						</div>
-						
-						<div class="row clearfix">
-							
-							<!-- Feature Block Two -->
-							<div class="feature-block_two col-lg-6 col-md-6 col-sm-6">
-								<div class="feature-block_two-inner">
-									<h4 class="feature-block_two-title">ISO Certified</h4>
-									<div class="feature-block_two-icon">
-										<i><img src="assets/images/icons/feature-1.svg" alt="" /></i>
-									</div>
-									<div class="feature-block_two_count">9001</div>
-									<div class="feature-block_two_text">ISO 9001-2015 Certified</div>
-								</div>
-							</div>
-							
-							<!-- Feature Block Two -->
-							<div class="feature-block_two col-lg-6 col-md-6 col-sm-6">
-								<div class="feature-block_two-inner">
-									<h4 class="feature-block_two-title">Years Experience</h4>
-									<div class="feature-block_two-icon">
-										<i><img src="assets/images/icons/feature-2.svg" alt="" /></i>
-									</div>
-									<div class="feature-block_two_count">7</div>
-									<div class="feature-block_two_text">Years of Excellence</div>
-								</div>
-							</div>
-							
-						</div>
-						
-					</div>
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
-	<!-- End About One -->
+    <section class="steel-section">
+        <div class="auto-container">
+            <div class="section-head">
+                <span class="steel-tag">Who We Are</span>
+                <h2>Leading Structural Steel Design and Detailing Company</h2>
+                <p>We specialize in engineering-led steel detailing workflows that support constructability, coordination, and execution from design intent to fabrication-ready output.</p>
+            </div>
 
-	<!-- Customer One -->
-	<section class="customer-one">
-		<div class="auto-container">
-			<div class="customer-one_bg">
-				<div class="customer-one_pattern" style="background-image:url(assets/images/background/pattern-1.png)"></div>
-			</div>
-			<div class="inner-container">
-				<div class="sec-title centered">
-				<div class="sec-title_title">Our Services</div>
-				<h2 class="sec-title_heading">What We Deliver for <br> Our Clients</h2>
-				</div>
-				
-				<div class="row clearfix">
-					
-					<!-- Customer Block One -->
-					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
-						<div class="customer-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url('images/about%20banner.jpg')"></div>
-							<div class="customer-block_one-number">01</div>
-							<div class="customer-block_one-icon">
-								<img src="assets/images/icons/customer-1.svg" alt="" />
-							</div>
-							<h3 class="customer-block_one-title"><a href="structural-design-and-consultancy.php">Structural Design & Consultancy</a></h3>
-							<div class="customer-block_one-text">Expert structural engineering design and consultancy services for all types of steel structures, ensuring compliance with international codes and standards.</div>
-							<a class="customer-block_one-more" href="structural-design-and-consultancy.php">Read More <i class="fa-classic fa-solid fa-plus fa-fw"></i></a>
-						</div>
-					</div>
-					
-					<!-- Customer Block One -->
-					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
-						<div class="customer-block_one-inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url('images/commercial%20projects.png')"></div>
-							<div class="customer-block_one-number">02</div>
-							<div class="customer-block_one-icon">
-								<img src="assets/images/icons/customer-2.svg" alt="" />
-							</div>
-							<h3 class="customer-block_one-title"><a href="Steel-Detailing-Services.php">Steel Detailing Services</a></h3>
-							<div class="customer-block_one-text">Comprehensive steel detailing services with precision and accuracy, delivering detailed fabrication drawings for complex steel structures.</div>
-							<a class="customer-block_one-more" href="Steel-Detailing-Services.php">Read More <i class="fa-classic fa-solid fa-plus fa-fw"></i></a>
-						</div>
-					</div>
-					
-					<!-- Customer Block One -->
-					<div class="customer-block_one col-lg-4 col-md-6 col-sm-12">
-						<div class="customer-block_one-inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-							<div class="customer-block_one-bg" style="background-image:url('images/2024-10-20.webp')"></div>
-							<div class="customer-block_one-number">03</div>
-							<div class="customer-block_one-icon">
-								<img src="assets/images/icons/customer-3.svg" alt="" />
-							</div>
-							<h3 class="customer-block_one-title"><a href="bim-services.php">BIM Services</a></h3>
-							<div class="customer-block_one-text">Advanced Building Information Modeling services for enhanced collaboration, visualization, and project coordination in steel construction.</div>
-							<a class="customer-block_one-more" href="bim-services.php">Read More <i class="fa-classic fa-solid fa-plus fa-fw"></i></a>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Customer One -->
-	
-	<!-- About Three -->
-	<section class="about-three">
-		<div class="about-three_big-title">about</div>
-		<div class="about-three_pattern" style="background-image:url(assets/images/background/about-three_pattern.png)"></div>
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- Content Column -->
-				<div class="about-three_content-column col-lg-6 col-md-12 col-sm-12">
-					<div class="about-three_content-outer">
-						<!-- Sec Title -->
-						<div class="sec-title title-anim">
-							<div class="sec-title_title">ABOUT VHS ENGINEERING</div>
-							<h2 class="sec-title_heading">ISO 9001-2015 Certified Structural Steel Specialists</h2>
-							<div class="sec-title_text">VHS Engineering is an ISO 9001-2015 certified company established in 2017, specializing in structural steel design and detailing. We believe in quality, schedule, and good communication to build healthy customer relationships.</div>
-						</div>
-						<ul class="about-three_list">
-							<li><i class="fa-classic fa-solid fa-circle-check fa-fw"></i>ISO 9001-2015 Quality Certified Company</li>
-							<li><i class="fa-classic fa-solid fa-circle-check fa-fw"></i>Expertise in AISC, CISC, BS, IS Codes</li>
-							<li><i class="fa-classic fa-solid fa-circle-check fa-fw"></i>On-time Delivery & Quality Assurance</li>
-							<li><i class="fa-classic fa-solid fa-circle-check fa-fw"></i>Professional Communication & Client Relations</li>
-							<li><i class="fa-classic fa-solid fa-circle-check fa-fw"></i>Innovative Technologies & Continuous Improvement</li>
-						</ul>
-						<div class="about-three_info">
-							<div class="d-flex justify-content-between align-items-center flex-wrap">
-								<div class="about-three_text">We have multiple models of engagement: We can work directly with individuals for private residences, partner.</div>
-								<div class="about-three_author">
-									VHS Engineering Team
-									<i>ISO 9001-2015 Certified</i>
-									<span><img src="assets/images/section/about-award.svg" alt="" /></span>
-								</div>
-							</div>
-						</div>
-						<div class="lower-box d-flex align-items-center flex-wrap">
-							<!-- Button Box -->
-							<div class="about-three_button">
-								<a href="about.php" class="theme-btn btn-style-three">
-									<span class="btn-wrap">
-										<span class="text-one">learn more <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-										<span class="text-two">learn more <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-									</span>
-								</a>
-							</div>
-							
-							<!-- Phone Box -->
-							<div class="about-three_phone">
-								<div class="about-three_phone-inner">
-									<span class="about-three_phone-icon fa-classic fa-solid fa-phone fa-fw"></span>
-									Call Us 24/7 <br>
-									<a href="tel:+917588639200">+91 7588639200</a>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				
-				<!-- Image Column -->
-				<div class="about-three_images-column col-lg-6 col-md-12 col-sm-12">
-					<div class="about-three_images-outer">
-						<div class="about-three_image">
-							<img src="images/commercial%20projects.png" alt="Commercial project" />
-						</div>
-						<div class="about-three_image-two">
-							<img src="images/educational%20bldg.png" alt="Educational project" />
-						</div>
-						<div class="about-three_image-three">
-							<img src="images/offshore.png" alt="Offshore project" />
-						</div>
-						<div class="about-three_award">
-							<span><img src="assets/images/icons/award.svg" alt="" /></span>
-							We're a global award <br> wining company
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End About Three -->
-	
-	<!-- Counter Three -->
-	<section class="counter-three">
-		<div class="counter-three_pattern" style="background-image:url(assets/images/background/pattern-4.png)"></div>
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- Counter One -->
-				<div class="counter-block_three col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_three-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_three-count"><span class="odometer" data-count="7"></span>+</div>
-						<h4 class="counter-block_three-title">Years of Excellence</h4>
-						<div class="counter-block_three-text">Established in 2017, serving clients worldwide with quality engineering services.</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_three col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_three-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_three-count"><span class="odometer" data-count="100"></span>+</div>
-						<h4 class="counter-block_three-title">Projects Completed</h4>
-						<div class="counter-block_three-text">Successfully delivered complex steel structure projects across various industries.</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_three col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_three-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_three-count"><span class="odometer" data-count="98"></span>%</div>
-						<h4 class="counter-block_three-title">Client Satisfaction</h4>
-						<div class="counter-block_three-text">Our commitment to quality and on-time delivery ensures client satisfaction.</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_three col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_three-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_three-count"><span class="odometer" data-count="50"></span>+</div>
-						<h4 class="counter-block_three-title">Expert Engineers</h4>
-						<div class="counter-block_three-text">Skilled team of structural engineers delivering world-class steel detailing services.</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Counter Three -->
-	
-	<!-- Testimonial One -->
-	<section class="testimonial-one">
-		<div class="testimonial-one_circle"></div>
-		<div class="auto-container">
-			<div class="d-flex justify-content-between align-items-center flex-wrap">
-				<!-- Testimonial One Options -->
-				<div class="testimonial-one_options d-flex align-items-center flex-wrap">
-					<div class="testimonial-one_reviews">
-						5.9K Reviews
-						<div class="rating">
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-							<span class="fa fa-star"></span>
-						</div>
-					</div>
-				
-					<div class="testimonial-one__trusted">
-						Trusted by
-						<span>world leading companies</span>
-					</div>
-				</div>
-				<!-- End Testimonial One Options -->
-				
-				<!-- Testimonial One Button -->
-				<div class="testimonial-one_button">
-					<a href="about.php" class="theme-btn btn-style-three">
-						<span class="btn-wrap">
-							<span class="text-one">Discover More <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-							<span class="text-two">Discover More <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-						</span>
-					</a>
-				</div>
-				<!-- End Testimonial One Button -->
-				
-			</div>
-			
-			<div class="testimonial-one_carousel">
-				
-				<div class="single-item_carousel swiper-container">
-					<div class="swiper-wrapper">
+            <div class="about-story">
+                <article class="story-panel">
+                    <h3>Our Mission</h3>
+                    <p>We provide high quality structural engineering services and solutions while using innovative technologies and continuous improvement, maintaining the highest business standards and work ethics that add measurable value for clients and partners.</p>
+                </article>
+                <article class="story-panel">
+                    <h3>Our Vision</h3>
+                    <p>Our solutions are designed to meet the demands of modern construction enterprises so they can execute confidently in a competitive market with speed, reliability, and technical clarity.</p>
+                </article>
+            </div>
+        </div>
+    </section>
 
-						<!-- Slide -->
-						<div class="swiper-slide">
-							<!-- Testimonial Block One -->
-							<div class="testimonial-block_one">
-								<div class="testimonial-block_one-inner">
-									<div class="testimonial-block_one-text">"They know their business and their approach, professional efforts and manner of doing business  works well as a team player with the owners and their other  consultants."</div>
-									<div class="testimonial-block_one-designation">
-										Ralph Adams <span>Construction Admin., Assistant Project Manager</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Slide -->
-						<div class="swiper-slide">
-							<!-- Testimonial Block One -->
-							<div class="testimonial-block_one">
-								<div class="testimonial-block_one-inner">
-									<div class="testimonial-block_one-text">"They know their business and their approach, professional efforts and manner of doing business  works well as a team player with the owners and their other  consultants."</div>
-									<div class="testimonial-block_one-designation">
-										Ralph Adams <span>Construction Admin., Assistant Project Manager</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- Slide -->
-						<div class="swiper-slide">
-							<!-- Testimonial Block One -->
-							<div class="testimonial-block_one">
-								<div class="testimonial-block_one-inner">
-									<div class="testimonial-block_one-text">"They know their business and their approach, professional efforts and manner of doing business  works well as a team player with the owners and their other  consultants."</div>
-									<div class="testimonial-block_one-designation">
-										Ralph Adams <span>Construction Admin., Assistant Project Manager</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<!-- If we need pagination -->
-					<div class="single-item_carousel-pagination"></div>
-					
-				</div>
-				
-			</div>
-			
-		</div>
-	</section>
-	<!-- End Testimonial One -->
-	
-	<!-- Counter One -->
-	<section class="counter-one">
-		<div class="counter-one_pattern" style="background-image:url(assets/images/section/about-counter-bg.svg)"></div>
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- Counter One -->
-				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="48"></span><sup>+</sup></div>
-						<div class="counter-block_one-text">completed <br> projects</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="52"></span><sup>+</sup></div>
-						<div class="counter-block_one-text">projects in <br> development</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="2.3"></span>b<sup>+</sup></div>
-						<div class="counter-block_one-text">total projects <br> cost</div>
-					</div>
-				</div>
-				
-				<!-- Counter One -->
-				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
-					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="18"></span>m<sup>+</sup></div>
-						<div class="counter-block_one-text">square feet <br> of property</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End Counter One -->
-	
-	<!-- Faq One -->
-	<section class="faq-one">
-		<div class="faq-one_pattern" style="background-image:url(assets/images/background/pattern-4.png)"></div>
-		<div class="auto-container">
-			<div class="row clearfix">
-				
-				<!-- Image Column -->
-				<div class="faq-one_image-column col-lg-5 col-md-6 col-sm-12">
-					<div class="faq-one_image">
-						<img src="images/slider%201.jpg" alt="Engineering team coordination" />
-					</div>
-				</div>
-				
-				<!-- Image Column -->
-				<div class="faq-one_accordian-column col-lg-7 col-md-6 col-sm-12">
-					<div class="faq-one_accordian-outer">
-						<!-- Sec Title -->
-						<div class="sec-title title-anim">
-							<div class="sec-title_title">
-								VHS Engineering Services
-							</div>
-							<h2 class="sec-title_heading">Frequently Asked Questions</h2>
-						</div>
-						
-						<!-- Accordion Box -->
-						<ul class="accordion-box">
-												
-							<!-- Block -->
-							<li class="accordion block active-block">
-								<div class="acc-btn active"><div class="icon-outer"><span class="icon fa-classic fa-solid fa-arrow-right fa-fw"></span></div>What kind of warranty or guarantee does Elevate offer?</div>
-								<div class="acc-content current">
-									<div class="content">
-										<div class="text">Fusce lacinia nulla consequat porta et viverra velit etiam, varius per condimentum lacus ultricies a placerat venatis semper donec id accumsan augue eleifend facili sis. Lectus arcu odio erat congue sociosqu ultricies</div>
-									</div>
-								</div>
-							</li>
-										
-							<!-- Block -->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon fa-classic fa-solid fa-arrow-right fa-fw"></span></div>Why should I choose elevate for my construction project?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text">Fusce lacinia nulla consequat porta et viverra velit etiam, varius per condimentum lacus ultricies a placerat venatis semper donec id accumsan augue eleifend facili sis. Lectus arcu odio erat congue sociosqu ultricies</div>
-									</div>
-								</div>
-							</li>
-							
-							<!-- Block -->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon fa-classic fa-solid fa-arrow-right fa-fw"></span></div>What is the process for working with Elevate?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text">Fusce lacinia nulla consequat porta et viverra velit etiam, varius per condimentum lacus ultricies a placerat venatis semper donec id accumsan augue eleifend facili sis. Lectus arcu odio erat congue sociosqu ultricies</div>
-									</div>
-								</div>
-							</li>
-							
-							<!-- Block -->
-							<li class="accordion block">
-								<div class="acc-btn"><div class="icon-outer"><span class="icon fa-classic fa-solid fa-arrow-right fa-fw"></span></div>What types of projects does Elevate specialize in?</div>
-								<div class="acc-content">
-									<div class="content">
-										<div class="text">Fusce lacinia nulla consequat porta et viverra velit etiam, varius per condimentum lacus ultricies a placerat venatis semper donec id accumsan augue eleifend facili sis. Lectus arcu odio erat congue sociosqu ultricies</div>
-									</div>
-								</div>
-							</li>
-							
-						</ul>
-						
-					</div>
-				</div>
-				
-			</div>
-			
-			
-			
-		</div>
-	</section>
-	<!-- End Faq One -->
-	
-	
+    <section class="steel-section" style="padding-top: 0;">
+        <div class="auto-container">
+            <div class="section-head">
+                <span class="steel-tag">What We Deliver</span>
+                <h2>Integrated Services for Steel Projects</h2>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="num">01</div>
+                    <h4>Structural Steel Design</h4>
+                    <p>Code-compliant structural design and consultancy to support safe, economical, and buildable solutions.</p>
+                </article>
+                <article class="service-card">
+                    <div class="num">02</div>
+                    <h4>Steel Detailing Services</h4>
+                    <p>Detailed shop and fabrication drawings developed with constructability in focus for complex steel structures.</p>
+                </article>
+                <article class="service-card">
+                    <div class="num">03</div>
+                    <h4>BIM Services</h4>
+                    <p>Model-based coordination for better clash control, visualization, and project communication across stakeholders.</p>
+                </article>
+                <article class="service-card">
+                    <div class="num">04</div>
+                    <h4>Connection Design</h4>
+                    <p>Engineered steel connections aligned with project load paths, standards, and fabrication requirements.</p>
+                </article>
+                <article class="service-card">
+                    <div class="num">05</div>
+                    <h4>Estimodelling</h4>
+                    <p>Pre-bid quantity and model-driven estimation support to improve bid accuracy and reduce commercial risk.</p>
+                </article>
+                <article class="service-card">
+                    <div class="num">06</div>
+                    <h4>Deputation Services</h4>
+                    <p>Flexible engineering resource support for teams that need specialized structural steel expertise.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="steel-section" style="padding-top: 0;">
+        <div class="auto-container">
+            <div class="quality-grid">
+                <div>
+                    <div class="section-head" style="margin-bottom: 18px;">
+                        <span class="steel-tag">Why Clients Trust Us</span>
+                        <h2>Quality, Standards, and Delivery Discipline</h2>
+                    </div>
+                    <ul class="quality-list">
+                        <li>ISO 9001-2015 Quality Certified Company</li>
+                        <li>Expertise in AISC, CISC, BS, and IS Codes</li>
+                        <li>On-time Delivery with Strict Quality Assurance</li>
+                        <li>Professional Communication and Client Coordination</li>
+                        <li>Continuous Improvement Through Innovative Technologies</li>
+                    </ul>
+                </div>
+                <aside class="iso-card">
+                    <h3>9001</h3>
+                    <p>ISO 9001-2015 certified processes integrated into every design and detailing deliverable.</p>
+                    <p style="margin-top: 16px;">Engagement model: We work directly with individuals for private residences and also partner with businesses on larger projects.</p>
+                    <div class="iso-logos">
+                        <div class="iso-logo"><img src="images/certifications/1.png" alt="Certification 1" /></div>
+                        <div class="iso-logo"><img src="images/certifications/2.png" alt="Certification 2" /></div>
+                        <div class="iso-logo"><img src="images/certifications/3.png" alt="Certification 3" /></div>
+                        <div class="iso-logo"><img src="images/certifications/4.png" alt="Certification 4" /></div>
+                        <div class="iso-logo"><img src="images/certifications/5.png" alt="Certification 5" /></div>
+                        <div class="iso-logo"><img src="images/certifications/6.png" alt="Certification 6" /></div>
+                        <div class="iso-logo"><img src="images/certifications/7.png" alt="Certification 7" /></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="counter-strip">
+        <div class="auto-container">
+            <div class="counter-grid">
+                <div class="counter-box">
+                    <h4>7+</h4>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="counter-box">
+                    <h4>100+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="counter-box">
+                    <h4>98%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="counter-box">
+                    <h4>50+</h4>
+                    <p>Expert Engineers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-cta">
+        <div class="auto-container">
+            <div class="cta-inner">
+                <h2>Build with a Steel Detailing Partner You Can Rely On</h2>
+                <p>From design development to final fabrication information, VHS Engineering supports project teams with accurate, coordinated, and production-ready engineering outputs.</p>
+                <a href="contact.php" class="theme-btn btn-style-three">
+                    <span class="btn-wrap">
+                        <span class="text-one">Start Your Project <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
+                        <span class="text-two">Start Your Project <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
 <?php include('footer.php'); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
