@@ -152,7 +152,7 @@
 		<div class="auto-container">
 			<div class="sec-title title-anim">
 				<div class="sec-title_title">WHO WE ARE</div>
-				<h2 class="sec-title_heading">VHS Engineering Pvt Ltd: Global Construction Engineering Services</h2>
+				<h2 class="sec-title_heading">ISO 9001-2015 Certified Structural Steel Detailing & Engineering Specialists</h2>
 			</div>
 			
 			<div class="row clearfix">
@@ -181,7 +181,7 @@
 							</div>
 							<div class="column col-lg-8 col-md-6 col-sm-6">
 								<div class="image">
-									<img src="images/about%20banner.jpg" alt="Construction site with crane" />
+								<img src="images/about%20banner.jpg" alt="Steel structure detailing project" />
 								</div>
 							</div>
 						</div>
@@ -194,39 +194,37 @@
 						
 						<!-- Feature Block One -->
 						<div class="feature-block_one">
-							<h4 class="feature-block_one-title">Our vision</h4>
-							<div class="feature-block_one-text">Building Success Together, with Precision and Trust. To deliver high-quality structural engineering services that empower the construction industry worldwide.</div>
-						</div>
+								<h4 class="feature-block_one-title">Our Vision</h4>
+								<div class="feature-block_one-text">To be the most trusted steel detailing partner for fabricators and engineers worldwide — delivering accurate, coordinated, and construction-ready outputs on every project.</div>
 						
 						<!-- Feature Block One -->
 						<div class="feature-block_one">
-							<h4 class="feature-block_one-title">Our mission</h4>
-							<div class="feature-block_one-text">Timely delivery is our promise, uncompromised quality is our standard. Providing comprehensive solutions in steel detailing, BIM, and structural design.</div>
-						</div>
+								<h4 class="feature-block_one-title">Our Mission</h4>
+								<div class="feature-block_one-text">We provide high-quality steel detailing, BIM coordination, connection design, and structural consultancy — with on-time delivery and professional communication at every stage.</div>
 						
 						<div class="row clearfix">
 							
 							<!-- Feature Block Two -->
 							<div class="feature-block_two col-lg-6 col-md-6 col-sm-6">
 								<div class="feature-block_two-inner">
-									<h4 class="feature-block_two-title">global reach</h4>
+									<h4 class="feature-block_two-title">ISO Certified</h4>
 									<div class="feature-block_two-icon">
-										<i><img src="assets/images/section/feature-global.svg" alt="" /></i>
+										<i><img src="assets/images/icons/feature-1.svg" alt="" /></i>
 									</div>
-									<div class="feature-block_two_count"><span class="odometer" data-count="10"></span><sup>+</sup></div>
-									<div class="feature-block_two_text">countries served</div>
+									<div class="feature-block_two_count">9001</div>
+									<div class="feature-block_two_text">ISO 9001-2015 Certified</div>
 								</div>
 							</div>
 							
 							<!-- Feature Block Two -->
 							<div class="feature-block_two col-lg-6 col-md-6 col-sm-6">
 								<div class="feature-block_two-inner">
-									<h4 class="feature-block_two-title">team size</h4>
+									<h4 class="feature-block_two-title">Expert Engineers</h4>
 									<div class="feature-block_two-icon">
-										<i><img src="assets/images/section/feature-team.svg" alt="" /></i>
+										<i><img src="assets/images/icons/feature-2.svg" alt="" /></i>
 									</div>
-									<div class="feature-block_two_count"><span class="odometer" data-count="150"></span><sup>+</sup></div>
-									<div class="feature-block_two_text">experienced professionals</div>
+									<div class="feature-block_two_count"><span class="odometer" data-count="50"></span><sup>+</sup></div>
+									<div class="feature-block_two_text">experienced engineers</div>
 								</div>
 							</div>
 							
@@ -331,7 +329,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">Structural Design & Consultancy</h3>
-										<div class="service-one_text">Expert structural design and consultancy services for construction projects worldwide.</div>
+									<div class="service-one_text">Code-compliant structural steel design with coordinated deliverables ready for fabrication and erection.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -348,7 +346,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">BIM Services</h3>
-										<div class="service-one_text">Advanced Building Information Modeling services for efficient project management.</div>
+									<div class="service-one_text">3D model-based coordination that catches clashes early and keeps every stakeholder aligned.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -365,7 +363,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">Steel Detailing Services</h3>
-										<div class="service-one_text">Precision steel detailing for structural integrity and fabrication accuracy.</div>
+									<div class="service-one_text">Accurate shop drawings and fabrication packages developed for complex steel structures across all sectors.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -382,7 +380,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">Connection Design Services</h3>
-										<div class="service-one_text">Specialized connection design for robust and safe structural connections.</div>
+									<div class="service-one_text">Engineered steel connections aligned with load paths, project codes, and fabrication tolerances.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -399,7 +397,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">EstiModelling & Pre-Bid Services</h3>
-										<div class="service-one_text">Accurate estimation modeling and pre-bid services for project planning.</div>
+									<div class="service-one_text">Model-driven quantity takeoffs and pre-bid documentation that improve bid accuracy and reduce risk.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -416,7 +414,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">Deputation Services</h3>
-										<div class="service-one_text">Professional deputation services for on-site engineering support.</div>
+									<div class="service-one_text">Flexible steel detailing and engineering resource support deployed directly into your project team.</div>
 									</div>
 								</div>
 								<!-- Image -->
@@ -433,7 +431,7 @@
 											</a>
 										</div>
 										<h3 class="service-one_sub-title">Other Engineering Services</h3>
-										<div class="service-one_text">Comprehensive range of additional engineering services tailored to your needs.</div>
+									<div class="service-one_text">Drafting, plate nesting, erection planning, and specialty support services for steel fabricators and engineers.</div>
 									</div>
 								</div>
 							</div>
@@ -466,11 +464,11 @@
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
-										<div class="project-block_one-title">Builder</div>
-										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Hollywood, Florida</div>
+										<div class="project-block_one-title">Steel Detailing</div>
+										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Commercial Projects</div>
 									</div>
-									<h3 class="project-block_one-heading"><a href="project-detail.php">Spiral Stair of <br> Four Pillar Hotel</a></h3>
-									<div class="project-block_one-text">Our solutions are designed to meet the needs of modern enterprises, ensuring they thrive in today's competitive online landscape.</div>
+									<h3 class="project-block_one-heading"><a href="project-detail.php">Commercial <br> Steel Structures</a></h3>
+									<div class="project-block_one-text">Precision shop drawings and fabrication-ready detailing for multi-storey commercial steel structures.</div>
 									<a href="#" class="project-block_one-arrow">
 										<i class="fa-classic fa-solid fa-arrow-right fa-fw"></i>
 									</a>
@@ -488,11 +486,11 @@
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
-										<div class="project-block_one-title">Builder</div>
-										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Hollywood, Florida</div>
+										<div class="project-block_one-title">Structural Design</div>
+										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Educational Projects</div>
 									</div>
-									<h3 class="project-block_one-heading"><a href="project-detail.php">Hampton Inn & Suit <br> Hotel</a></h3>
-									<div class="project-block_one-text">Our solutions are designed to meet the needs of modern enterprises, ensuring they thrive in today's competitive online landscape.</div>
+									<h3 class="project-block_one-heading"><a href="project-detail.php">Educational <br> Buildings</a></h3>
+									<div class="project-block_one-text">Structural design and steel detailing for schools, colleges, and institutional buildings with code-compliant outputs.</div>
 									<a href="#" class="project-block_one-arrow">
 										<i class="fa-classic fa-solid fa-arrow-right fa-fw"></i>
 									</a>
@@ -510,11 +508,11 @@
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
-										<div class="project-block_one-title">Builder</div>
-										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Project Location</div>
+										<div class="project-block_one-title">BIM & Detailing</div>
+										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Industrial & Offshore</div>
 									</div>
-									<h3 class="project-block_one-heading"><a href="project-detail.php">Premier Office <br> Tower</a></h3>
-									<div class="project-block_one-text">Our solutions are designed to meet the needs of modern enterprises, ensuring they thrive in today's competitive online landscape.</div>
+									<h3 class="project-block_one-heading"><a href="project-detail.php">Industrial & <br> Offshore Structures</a></h3>
+									<div class="project-block_one-text">Coordinated BIM models and detailing packages for heavy industrial platforms, offshore modules, and process plants.</div>
 									<a href="#" class="project-block_one-arrow">
 										<i class="fa-classic fa-solid fa-arrow-right fa-fw"></i>
 									</a>
@@ -532,11 +530,11 @@
 							<div class="project-block_one-overlay">
 								<div class="project-block_one-overlay_inner" style="background-image:url(assets/images/background/project-1.png)">
 									<div class="d-flex justify-content-between align-items-center flex-wrap">
-										<div class="project-block_one-title">Builder</div>
-										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Hollywood, Florida</div>
+										<div class="project-block_one-title">Material Handling</div>
+										<div class="project-block_one-location"><i class="icon"><img src="assets/images/icons/location.svg" alt="" /></i> Material Handling</div>
 									</div>
-									<h3 class="project-block_one-heading"><a href="project-detail.php">Greenview <br> Apartments</a></h3>
-									<div class="project-block_one-text">Our solutions are designed to meet the needs of modern enterprises, ensuring they thrive in today's competitive online landscape.</div>
+									<h3 class="project-block_one-heading"><a href="project-detail.php">Material Handling <br> Structures</a></h3>
+									<div class="project-block_one-text">Steel detailing and connection design for conveyors, hoppers, mezzanines, and material handling equipment supports.</div>
 									<a href="#" class="project-block_one-arrow">
 										<i class="fa-classic fa-solid fa-arrow-right fa-fw"></i>
 									</a>
@@ -656,7 +654,7 @@
 				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
 					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="1000"></span><sup>+</sup></div>
+						<div class="counter-block_one-count"><span class="odometer" data-count="100"></span><sup>+</sup></div>
 						<div class="counter-block_one-text">projects <br> delivered</div>
 					</div>
 				</div>
@@ -665,7 +663,7 @@
 				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
 					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="24"></span><sup>+</sup></div>
+						<div class="counter-block_one-count"><span class="odometer" data-count="7"></span><sup>+</sup></div>
 						<div class="counter-block_one-text">years of <br> experience</div>
 					</div>
 				</div>
@@ -674,8 +672,8 @@
 				<div class="counter-block_one col-lg-3 col-md-6 col-sm-12">
 					<div class="counter-block_one-inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 						<div class="counter-block_one-outline"></div>
-						<div class="counter-block_one-count"><span class="odometer" data-count="150"></span><sup>+</sup></div>
-						<div class="counter-block_one-text">team <br> members</div>
+						<div class="counter-block_one-count"><span class="odometer" data-count="50"></span><sup>+</sup></div>
+						<div class="counter-block_one-text">expert <br> engineers</div>
 					</div>
 				</div>
 				
@@ -734,7 +732,7 @@
 								<div class="acc-btn"><div class="icon-outer"><span class="icon fa-classic fa-solid fa-arrow-right fa-fw"></span></div>Why choose VHS Engineering for your project?</div>
 								<div class="acc-content">
 									<div class="content">
-										<div class="text">Our team focuses on quality, schedule commitment, and clear communication, with workflows aligned to international standards and practical construction requirements.</div>
+										<div class="text">Our steel detailing and BIM workflows are aligned to AISC, CISC, BS, and IS standards — ensuring accurate, coordinated, and fabrication-ready deliverables on every project.</div>
 									</div>
 								</div>
 							</li>

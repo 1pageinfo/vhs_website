@@ -59,7 +59,7 @@
 			<div class="auto-container">
 				<div class="sec-title centered">
 					<div class="sec-title_title">Our services</div>
-					<h2 class="sec-title_heading">Construction Service <br> To Our Clients</h2>
+					<h2 class="sec-title_heading">Structural Steel Engineering <br> Services We Deliver</h2>
 				</div>
 				
 				<div class="row clearfix">
