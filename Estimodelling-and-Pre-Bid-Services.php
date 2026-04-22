@@ -46,7 +46,7 @@
 	.premium-service .ps-kicker { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 100px; padding: 7px 14px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #d6e7ff; margin-bottom: 18px; }
 	.premium-service .ps-hero h1 { font-size: 44px; line-height: 1.15; font-weight: 800; color: #ffffff; margin: 0 0 18px; }
 	.premium-service .ps-hero p { font-size: 16px; line-height: 1.8; color: #dbe8f7; margin: 0; }
-	.premium-service .ps-hero-media { height: 100%; min-height: 340px; background: linear-gradient(180deg, rgba(8, 18, 30, 0.25), rgba(8, 18, 30, 0.65)), url('assets/images/section/placeholder-structure-c.svg') center/cover no-repeat; }
+	.premium-service .ps-hero-media { height: 100%; min-height: 340px; background: linear-gradient(180deg, rgba(8, 18, 30, 0.25), rgba(8, 18, 30, 0.65)), url('images/placeholder-structure-c.png') center/cover no-repeat; }
 	.premium-service .ps-section { margin-top: 28px; }
 	.premium-service .ps-section-title { font-size: 30px; font-weight: 800; line-height: 1.2; color: #13283f; margin-bottom: 14px; }
 	.premium-service .ps-section-lead { font-size: 16px; line-height: 1.75; color: #3f556c; max-width: 900px; margin-bottom: 22px; }

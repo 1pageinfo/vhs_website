@@ -63,7 +63,7 @@
 	.premium-service .ps-hero p { font-size: 16px; line-height: 1.8; color: #dbe8f7; margin: 0; }
 	.premium-service .ps-hero-media {
 		height: 100%; min-height: 340px;
-		background: linear-gradient(180deg,rgba(8,18,30,0.25),rgba(8,18,30,0.65)), url('assets/images/section/placeholder-structure-b.svg') center/cover no-repeat;
+		background: linear-gradient(180deg,rgba(8,18,30,0.25),rgba(8,18,30,0.65)), url('images/deputation.png') center/cover no-repeat;
 	}
 	.premium-service .ps-section { margin-top: 28px; }
 	.premium-service .ps-section-title { font-size: 30px; font-weight: 800; line-height: 1.2; color: #13283f; margin-bottom: 14px; }

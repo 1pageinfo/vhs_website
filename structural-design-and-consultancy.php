@@ -86,7 +86,7 @@
 	.premium-service .ps-hero-media {
 		height: 100%;
 		min-height: 340px;
-		background: linear-gradient(180deg, rgba(8, 18, 30, 0.25), rgba(8, 18, 30, 0.65)), url('images/about%20banner.jpg') center/cover no-repeat;
+		background: linear-gradient(180deg, rgba(8, 18, 30, 0.25), rgba(8, 18, 30, 0.65)), url('images/hero banner for service 1.png') center/cover no-repeat;
 	}
 	.premium-service .ps-section {
 		margin-top: 28px;

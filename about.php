@@ -33,7 +33,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(15, 23, 32, 0.93) 0%, rgba(15, 23, 32, 0.72) 45%, rgba(15, 23, 32, 0.42) 100%),
-        url('images/about%20banner.jpg') center/cover no-repeat;
+        url('images/about.png') center/cover no-repeat;
 }
 
 .about-hero-grid {
@@ -338,6 +338,7 @@
     padding: 92px 0;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .about-cta::before,

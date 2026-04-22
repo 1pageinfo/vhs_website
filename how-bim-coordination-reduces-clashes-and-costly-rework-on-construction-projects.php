@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">15 Feb</div>
 								<div class="news-detail_image">
-									<img src="images/2024-10-20.webp" alt="BIM coordination on site" />
-									<img src="images/2024-10-20.webp" alt="BIM coordination on site" />
+								<img src="images/2024-10-20.png" alt="BIM coordination on site" />
+								<img src="images/2024-10-20.png" alt="BIM coordination on site" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

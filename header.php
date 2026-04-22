@@ -16,6 +16,7 @@ if (!isset($base_path) || $base_path === '') {
 <link href="<?php echo $base_path; ?>assets/css/style.css" rel="stylesheet">
 <link href="<?php echo $base_path; ?>assets/css/meanmenu.min.css" rel="stylesheet">
 <link href="<?php echo $base_path; ?>assets/css/responsive.css" rel="stylesheet">
+<link href="<?php echo $base_path; ?>assets/css/vhs-theme.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
@@ -42,7 +43,7 @@ if (!isset($base_path) || $base_path === '') {
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 </head>
 
-<body>
+<body class="vhs-theme">
 
 <div class="page-wrapper">
 

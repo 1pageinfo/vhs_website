@@ -45,7 +45,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url('images/slider%201.jpg')"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/hero1.png')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -73,7 +73,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url('images/slider%202.jpg')"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/BIM\ BANNER.png')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -101,7 +101,7 @@
 
 				<!-- Slide -->
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url('images/slider%203.jpg')"></div>
+					<div class="slider-one_image-layer" style="background-image:url('images/slider3.png')"></div>
 					<div class="slider-one_pattern" style="background-image:url(assets/images/main-slider/vector-1.png)"></div>
 					<div class="auto-container">
 						<!-- Content Column -->
@@ -275,6 +275,17 @@
 .vhs-faq-contact-item .ico { width: 42px; height: 42px; min-width: 42px; background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.3); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--vhs-sky); font-size: 15px; }
 .vhs-faq-contact-item span { font-size: 11px; color: var(--vhs-sky); font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; display: block; margin-bottom: 3px; }
 .vhs-faq-contact-item a { color: var(--vhs-white); font-size: 14px; font-weight: 600; text-decoration: none; }
+.vhs-about-image {
+    width: 100%;
+    height: 100%;
+}
+
+.vhs-about-image img {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 14px;
+}
 
 /* ---- Responsive ---- */
 @media (max-width: 1199px) {
@@ -345,10 +356,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="vhs-img-mosaic">
-					<div class="main-img"><img src="images/about%20banner.jpg" alt="Steel structure project" /></div>
-					<div><img src="images/commercial%20projects.png" alt="Commercial steel project" /></div>
-					<div><img src="images/offshore.png" alt="Industrial offshore steel" /></div>
+				<div class="vhs-about-image">
+					<div class="main-img"><img src="images/about.png" alt="Steel structure project" /></div>
 				</div>
 			</div>
 		</div>
@@ -462,45 +471,46 @@
 			</div>
 			<div class="vhs-sectors-grid">
 				<div class="vhs-sector-card">
-					<img src="images/commercial%20projects.png" alt="Commercial steel structures" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Steel Detailing</span>
-						<h3>Commercial Structures</h3>
-					</div>
-				</div>
-				<div class="vhs-sector-card">
-					<img src="images/educational%20bldg.png" alt="Educational buildings" />
+					<img src="images/hero banner for service 1.png" alt="Structural Design & Consultancy" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">Structural Design</span>
-						<h3>Educational Buildings</h3>
+						<h3>Structural Design & Consultancy</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/offshore.png" alt="Industrial and offshore" />
+					<img src="images/BIM BANNER.png" alt="BIM Services" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">BIM &amp; Detailing</span>
-						<h3>Industrial &amp; Offshore</h3>
+						<h3>BIM Services</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/material%20handling%20.png" alt="Material handling" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Connection Design</span>
-						<h3>Material Handling</h3>
-					</div>
-				</div>
-				<div class="vhs-sector-card">
-					<img src="images/recent%20project.png" alt="Recent steel project" />
+					<img src="images/placeholder-structure-c.png" alt="Estimodelling & Pre-Bid Services" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">EstiModelling</span>
-						<h3>Mixed-Use &amp; Residential</h3>
+						<h3>Estimodelling & Pre-Bid Services</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/slider%202.jpg" alt="Miscellaneous projects" />
+					<img src="images/STRUCTURAL DESIGN.png" alt="Connection Design" />
 					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Misc &amp; Other</span>
-						<h3>Platforms &amp; Mezzanines</h3>
+						<span class="vhs-sector-tag">Steel Connections</span>
+						<h3>Connection Design Services</h3>
+					</div>
+				</div>
+
+				<div class="vhs-sector-card">
+					<img src="images/steel services.png" alt="Recent steel project" />
+					<div class="vhs-sector-overlay">
+						<span class="vhs-sector-tag">Steel Detailing Services</span>
+						<h3>Steel Detailing Services</h3>
+					</div>
+				</div>
+				<div class="vhs-sector-card">
+					<img src="images/deputation.png" alt="Deputation Services" />
+					<div class="vhs-sector-overlay">
+						<span class="vhs-sector-tag">Deputation Services</span>
+						<h3>Deputation Services</h3>
 					</div>
 				</div>
 			</div>

@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">08 Mar</div>
 								<div class="news-detail_image">
-									<img src="images/commercial%20projects.png" alt="Steel detailing fabrication" />
-									<img src="images/commercial%20projects.png" alt="Steel detailing fabrication" />
+								<img src="images/commercial20projects.png" alt="Steel detailing fabrication" />
+								<img src="images/commercial20projects.png" alt="Steel detailing fabrication" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

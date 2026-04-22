@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">14 Aug</div>
 								<div class="news-detail_image">
-									<img src="images/2024-10-20.webp" alt="BIM LOD levels in structural projects" />
-									<img src="images/2024-10-20.webp" alt="BIM LOD levels in structural projects" />
+								<img src="images/BIM model progression in engineering design.png" alt="BIM LOD levels in structural projects" />
+								<img src="images/BIM model progression in engineering design.png" alt="BIM LOD levels in structural projects" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">20 May</div>
 								<div class="news-detail_image">
-									<img src="images/1st%20imp.png" alt="Pre-bid estimating process" />
-									<img src="images/1st%20imp.png" alt="Pre-bid estimating process" />
+								<img src="images/How Accurate Pre-Bid Estimating Gives Contractors a Competitive Edge.png" alt="Pre-bid estimating process" />
+								<img src="images/How Accurate Pre-Bid Estimating Gives Contractors a Competitive Edge.png" alt="Pre-bid estimating process" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

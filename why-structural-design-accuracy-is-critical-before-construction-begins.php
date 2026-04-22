@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">10 Jan</div>
 								<div class="news-detail_image">
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Structural design accuracy" />
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Structural design accuracy" />
+								<img src="assets/images/section/placeholder-structure-c.png" alt="Structural design accuracy" />
+								<img src="assets/images/section/placeholder-structure-c.png" alt="Structural design accuracy" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">10 Sep</div>
 								<div class="news-detail_image">
-									<img src="images/commercial%20projects.png" alt="Steel shop drawing package" />
-									<img src="images/commercial%20projects.png" alt="Steel shop drawing package" />
+								<img src="images/Engineering workstation with technical drawings.png" alt="Steel shop drawing package" />
+								<img src="images/Engineering workstation with technical drawings.png" alt="Steel shop drawing package" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

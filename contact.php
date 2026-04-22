@@ -37,7 +37,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-	<section class="page-title" style="background-image:url('images/contact%20us%20%281%29.png')">
+	<section class="page-title contact-page-title" style="background-image:url('images/contact%20us%20%281%29.png')">
         <div class="auto-container">
 			<h2>Contact Us</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -52,7 +52,7 @@
     <!-- End Page Title -->
 	
 	<!-- Contact Three -->
-	<section class="contact-three" id="contact">
+	<section class="contact-three contact-page-section" id="contact">
 		<div class="page-top_pattern" style="background-image:url(assets/images/background/pattern-13.png)"></div>
 		<div class="auto-container">
 			<div class="row clearfix">

@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">12 Apr</div>
 								<div class="news-detail_image">
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Steel connection joint design" />
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Steel connection joint design" />
+								<img src="images/Connection Design in Steel Structures.png" alt="Steel connection joint design" />
+								<img src="images/Connection Design in Steel Structures.png" alt="Steel connection joint design" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

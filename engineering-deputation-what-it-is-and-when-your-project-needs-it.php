@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">05 Jun</div>
 								<div class="news-detail_image">
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Engineering deputation professionals" />
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Engineering deputation professionals" />
+								<img src="images/engineering-deputation-what-it-is-and-when-your-project-needs-it.png" alt="Engineering deputation professionals" />
+								<img src="images/engineering-deputation-what-it-is-and-when-your-project-needs-it.png" alt="Engineering deputation professionals" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

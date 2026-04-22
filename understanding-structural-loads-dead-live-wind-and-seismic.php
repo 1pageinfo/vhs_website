@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">18 Jul</div>
 								<div class="news-detail_image">
-									<img src="images/engineer-examining-blueprint_23-2152006093.avif" alt="Structural load analysis" />
-									<img src="images/engineer-examining-blueprint_23-2152006093.avif" alt="Structural load analysis" />
+								<img src="images/Construction engineer inspecting building structure.png" alt="Structural load analysis" />
+								<img src="images/Construction engineer inspecting building structure.png" alt="Structural load analysis" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

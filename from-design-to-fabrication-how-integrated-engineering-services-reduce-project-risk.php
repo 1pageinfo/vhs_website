@@ -64,8 +64,8 @@
 							<div class="blog-detail_image-outer">
 								<div class="blog-detail_date">05 Oct</div>
 								<div class="news-detail_image">
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Integrated engineering services" />
-									<img src="assets/images/section/placeholder-structure-c.svg" alt="Integrated engineering services" />
+								<img src="images/from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.png" alt="Integrated engineering services" />
+								<img src="images/from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.png" alt="Integrated engineering services" />
 								</div>
 							</div>
 							<div class="blog-detail_content">

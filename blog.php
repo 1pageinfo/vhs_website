@@ -38,7 +38,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Page Title -->
-	<section class="page-title" style="background-image:url('images/blogs%20hero.png')">
+	<section class="page-title" style="background-image:url('images/blogs hero.png')">
         <div class="auto-container">
 			<h2>All Blogs</h2>
 			<div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -57,7 +57,7 @@ $blogs = [
 	[
 		'file'     => 'why-structural-design-accuracy-is-critical-before-construction-begins.php',
 		'date'     => '10 Jan',
-		'image'    => 'assets/images/section/placeholder-structure-c.svg',
+		'image'    => 'assets/images/section/placeholder-structure-c.png',
 		'alt'      => 'Structural design accuracy',
 		'comments' => '03',
 		'title'    => 'Why Structural Design Accuracy is Critical Before Construction Begins',
@@ -65,7 +65,7 @@ $blogs = [
 	[
 		'file'     => 'how-bim-coordination-reduces-clashes-and-costly-rework-on-construction-projects.php',
 		'date'     => '15 Feb',
-		'image'    => 'images/2024-10-20.webp',
+		'image'    => 'images/2024-10-20.png',
 		'alt'      => 'BIM coordination',
 		'comments' => '04',
 		'title'    => 'How BIM Coordination Reduces Clashes and Costly Rework on Projects',
@@ -73,7 +73,7 @@ $blogs = [
 	[
 		'file'     => 'role-of-steel-detailing-in-successful-fabrication-and-erection.php',
 		'date'     => '08 Mar',
-		'image'    => 'images/commercial%20projects.png',
+		'image'    => 'images/commercial20projects.png',
 		'alt'      => 'Steel detailing fabrication',
 		'comments' => '05',
 		'title'    => 'The Role of Steel Detailing in Successful Fabrication and Erection',
@@ -81,7 +81,7 @@ $blogs = [
 	[
 		'file'     => 'connection-design-in-steel-structures-why-joints-make-or-break-a-build.php',
 		'date'     => '12 Apr',
-		'image'    => 'assets/images/section/placeholder-structure-c.svg',
+		'image'    => 'images/Connection Design in Steel Structures.png',
 		'alt'      => 'Connection design steel',
 		'comments' => '03',
 		'title'    => 'Connection Design in Steel Structures: Why Joints Make or Break a Build',
@@ -89,7 +89,7 @@ $blogs = [
 	[
 		'file'     => 'accurate-pre-bid-estimating-gives-contractors-a-competitive-edge.php',
 		'date'     => '20 May',
-		'image'    => 'images/1st%20imp.png',
+		'image'    => 'images/How Accurate Pre-Bid Estimating Gives Contractors a Competitive Edge.png',
 		'alt'      => 'Pre-bid estimating',
 		'comments' => '04',
 		'title'    => 'How Accurate Pre-Bid Estimating Gives Contractors a Competitive Edge',
@@ -97,7 +97,7 @@ $blogs = [
 	[
 		'file'     => 'engineering-deputation-what-it-is-and-when-your-project-needs-it.php',
 		'date'     => '05 Jun',
-		'image'    => 'assets/images/section/placeholder-structure-c.svg',
+		'image'    => 'images/engineering-deputation-what-it-is-and-when-your-project-needs-it.png',
 		'alt'      => 'Engineering deputation',
 		'comments' => '02',
 		'title'    => 'Engineering Deputation: What It Is and When Your Project Needs It',
@@ -105,7 +105,7 @@ $blogs = [
 	[
 		'file'     => 'understanding-structural-loads-dead-live-wind-and-seismic.php',
 		'date'     => '18 Jul',
-		'image'    => 'images/engineer-examining-blueprint_23-2152006093.avif',
+		'image'    => 'images/Construction engineer inspecting building structure.png',
 		'alt'      => 'Structural loads',
 		'comments' => '06',
 		'title'    => 'Understanding Structural Loads: Dead, Live, Wind, and Seismic',
@@ -113,7 +113,7 @@ $blogs = [
 	[
 		'file'     => 'bim-lod-explained-from-lod-100-to-lod-500-in-structural-projects.php',
 		'date'     => '14 Aug',
-		'image'    => 'images/2024-10-20.webp',
+		'image'    => 'images/BIM model progression in engineering design.png',
 		'alt'      => 'BIM LOD levels',
 		'comments' => '05',
 		'title'    => 'BIM LOD Explained: From LOD 100 to LOD 500 in Structural Projects',
@@ -121,7 +121,7 @@ $blogs = [
 	[
 		'file'     => 'what-goes-into-a-complete-steel-shop-drawing-package.php',
 		'date'     => '10 Sep',
-		'image'    => 'images/commercial%20projects.png',
+		'image'    => 'images/Engineering workstation with technical drawings.png',
 		'alt'      => 'Steel shop drawing package',
 		'comments' => '04',
 		'title'    => 'What Goes Into a Complete Steel Shop Drawing Package?',
@@ -129,7 +129,7 @@ $blogs = [
 	[
 		'file'     => 'from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.php',
 		'date'     => '05 Oct',
-		'image'    => 'assets/images/section/placeholder-structure-c.svg',
+		'image'    => 'images/from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.png',
 		'alt'      => 'Integrated engineering services',
 		'comments' => '07',
 		'title'    => 'From Design to Fabrication: How Integrated Engineering Services Reduce Project Risk',
@@ -144,7 +144,7 @@ $offset     = ($current_page - 1) * $per_page;
 $page_blogs = array_slice($blogs, $offset, $per_page);
 ?>
 	<!-- News One -->
-	<section class="news-one style-two">
+	<section class="news-one style-two blog-listing-section">
 		<div class="auto-container">
 
 			<div class="row clearfix">
