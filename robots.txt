@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /sendemail.php
+Disallow: /not-found.php
+Disallow: /project-detail.php
+
+Sitemap: https://vhsengg.com/sitemap.xml
