@@ -39,7 +39,7 @@
 	<!-- End About Sidebar -->
 
 	<!-- Slider One -->
-	<section class="slider-one">
+	<section class="slider-one video-motion-home">
 		<div class="main-slider swiper-container">
 			<div class="swiper-wrapper">
 
@@ -270,11 +270,8 @@
 .vhs-faq-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 60px; align-items: start; }
 .vhs-faq-aside h3 { font-size: 32px; color: var(--vhs-white); margin: 0 0 16px; }
 .vhs-faq-aside p { font-size: 15px; color: var(--vhs-text); line-height: 1.8; margin: 0 0 28px; }
-.vhs-faq-contact { display: flex; flex-direction: column; gap: 14px; }
-.vhs-faq-contact-item { display: flex; align-items: center; gap: 14px; }
-.vhs-faq-contact-item .ico { width: 42px; height: 42px; min-width: 42px; background: rgba(56,189,248,0.1); border: 1px solid rgba(56,189,248,0.3); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--vhs-sky); font-size: 15px; }
-.vhs-faq-contact-item span { font-size: 11px; color: var(--vhs-sky); font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; display: block; margin-bottom: 3px; }
-.vhs-faq-contact-item a { color: var(--vhs-white); font-size: 14px; font-weight: 600; text-decoration: none; }
+.vhs-faq-image { margin-top: 8px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(56,189,248,0.2); }
+.vhs-faq-image img { width: 100%; height: 420px; object-fit: cover; display: block; }
 .vhs-about-image {
     width: 100%;
     height: 100%;
@@ -649,15 +646,8 @@
 					<div class="vhs-label">Common Questions</div>
 					<h3>Frequently Asked Questions</h3>
 					<p>Everything you need to know about working with VHS Engineering — from scope of services to delivery timelines and quality standards.</p>
-					<div class="vhs-faq-contact">
-						<div class="vhs-faq-contact-item">
-							<div class="ico"><i class="fa-solid fa-phone"></i></div>
-							<div><span>Call Us</span><a href="tel:+917588639200">+91 7588639200</a></div>
-						</div>
-						<div class="vhs-faq-contact-item">
-							<div class="ico"><i class="fa-solid fa-envelope"></i></div>
-							<div><span>Email Us</span><a href="mailto:contact@vhsengg.com">contact@vhsengg.com</a></div>
-						</div>
+					<div class="vhs-faq-image">
+						<img src="images/faq_home.png" alt="FAQ support visual" />
 					</div>
 				</div>
 				<div>
@@ -688,6 +678,88 @@
 		</div>
 	</section>
 	<!-- End FAQ -->
+
+<style>
+	.video-motion-home .slider-one_image-layer {
+		opacity: 1;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+		animation: vhsHeroCinematicMove 9s ease-in-out infinite alternate;
+	}
+
+	.video-motion-home .slider-one_heading {
+		font-size: clamp(32px, 4.2vw, 52px);
+		line-height: 1.15;
+	}
+
+	.video-motion-home .slider-one_title,
+	.video-motion-home .slider-one_heading,
+	.video-motion-home .slider-one_text,
+	.video-motion-home .slider-one_button {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		transition: none;
+	}
+
+	.video-motion-home .slider-one_pattern {
+		animation: vhsHeroPatternFloat 12s ease-in-out infinite;
+	}
+
+	@keyframes vhsHeroCinematicMove {
+		0% { transform: scale(1) translate3d(0, 0, 0); }
+		100% { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
+	}
+
+	@keyframes vhsHeroPatternFloat {
+		0% { transform: translate3d(0, 0, 0); opacity: 1; }
+		50% { transform: translate3d(8px, -8px, 0); opacity: 0.9; }
+		100% { transform: translate3d(0, 0, 0); opacity: 1; }
+	}
+
+	@media (max-width: 767px) {
+		.video-motion-home .slider-one_heading {
+			font-size: clamp(26px, 7.5vw, 36px);
+			line-height: 1.2;
+		}
+	}
+</style>
+
+<script>
+	window.addEventListener('load', function () {
+		var homeHeroSection = document.querySelector('.video-motion-home');
+		var sliderElement = homeHeroSection ? homeHeroSection.querySelector('.main-slider') : null;
+
+		if (!sliderElement || typeof Swiper === 'undefined') {
+			return;
+		}
+
+		if (sliderElement.swiper) {
+			sliderElement.swiper.destroy(true, true);
+		}
+
+		new Swiper(sliderElement, {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: true,
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			autoplay: {
+				enabled: true,
+				delay: 3200,
+				disableOnInteraction: false
+			},
+			pagination: {
+				el: homeHeroSection.querySelector('.slider-one_pagination'),
+				clickable: true,
+				renderBullet: function (index, className) {
+					var formattedIndex = (index + 1).toString().padStart(2, '0');
+					return '<span class="' + className + '">' + formattedIndex + '</span>';
+				}
+			},
+			speed: 2200
+		});
+	});
+</script>
 
 <?php include('footer.php'); ?>
 
