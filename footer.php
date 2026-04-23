@@ -83,8 +83,8 @@
 <div class="vhs-footer-bottom">
 <p>&copy; 2026 <strong>VHS Engineering Pvt. Ltd.</strong> All rights reserved. ISO 9001-2015 Certified.</p>
 <ul class="vhs-footer-legal">
-<li><a href="<?php echo $base_path; ?>about.php">Privacy Policy</a></li>
-<li><a href="<?php echo $base_path; ?>about.php">Terms of Service</a></li>
+<li><a href="<?php echo $base_path; ?>privacy-policy.php">Privacy Policy</a></li>
+<li><a href="<?php echo $base_path; ?>terms-of-service.php">Terms of Service</a></li>
 <li><a href="<?php echo $base_path; ?>contact.php">Support</a></li>
 </ul>
 </div>

@@ -1,4 +1,4 @@
-<?php include('header.php'); ?>
+﻿<?php include('header.php'); ?>
 
 	<!-- About Sidebar -->
 	<div class="about-sidebar">
@@ -121,105 +121,42 @@
 											<a href="#" class="fa-brands fa-twitter fa-fw"></a>
 											<a href="#" class="fa-brands fa-google fa-fw"></a>
 											<a href="#" class="fa-brands fa-dribbble fa-fw"></a>
-										</div>
-									</div>
-								</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-								<!-- Blog Author Post -->
-								<div class="blog-author-post">
-									<div class="blog-author-post_inner">
-										<div class="blog-detail_author-image">
-											<img src="assets/images/resource/author-8.jpg" alt="" />
-										</div>
-										<h5>About VHS Engineering</h5>
-										<div class="text">Our engineering team shares practical guidance on structural design, detailing workflows, and BIM coordination to support better project outcomes.</div>
-										<ul class="blog-author-post_socials">
-											<li><a href="#">Twitter</a></li>
-											<li><a href="#">Facebook</a></li>
-											<li><a href="#">Instagram</a></li>
-										</ul>
-									</div>
-								</div>
+<!-- Sidebar Side -->
+<div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+<aside class="sidebar sticky-top">
 
-								<!-- Comment Form -->
-								<div class="comment-form-outer">
-									<div class="group-title">
-										<h4>Leave a Comment</h4>
-										<p>Your email address will not be published. Required fields are marked *</p>
-									</div>
-									<div class="comment-form">
-										<form method="post" action="blog.php">
-											<div class="row clearfix">
-												<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-													<input type="text" name="username" placeholder="Name" required="">
-												</div>
-												<div class="col-lg-6 col-md-6 col-sm-12 form-group">
-													<input type="email" name="email" placeholder="Email" required="">
-												</div>
-												<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-													<input type="text" name="subject" placeholder="Subject" required="">
-												</div>
-												<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-													<textarea name="message" placeholder="Message"></textarea>
-												</div>
-												<div class="col-lg-12 col-md-12 col-sm-12 form-group">
-													<button class="theme-btn btn-style-three">
-														<span class="btn-wrap">
-															<span class="text-one">Submit Comment</span>
-															<span class="text-two">Submit Comment</span>
-														</span>
-													</button>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
+<div class="sidebar-widget post-widget">
+<div class="widget-content">
+<div class="sidebar-title"><h4>Recent Posts</h4></div>
+<div class="content">
+<div class="post">
+<div class="thumb"><a href="from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.php"><img src="images/from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.png" alt="Integrated Engineering Services"></a></div>
+<div class="post-date">October 2025</div>
+<h4><a href="from-design-to-fabrication-how-integrated-engineering-services-reduce-project-risk.php">From Design to Fabrication: Integrated Engineering Services</a></h4>
+</div>
+<div class="post">
+<div class="thumb"><a href="what-goes-into-a-complete-steel-shop-drawing-package.php"><img src="images/Engineering workstation with technical drawings.png" alt="Steel Shop Drawing Package"></a></div>
+<div class="post-date">September 2025</div>
+<h4><a href="what-goes-into-a-complete-steel-shop-drawing-package.php">What Goes Into a Complete Steel Shop Drawing Package?</a></h4>
+</div>
+<div class="post">
+<div class="thumb"><a href="bim-lod-explained-from-lod-100-to-lod-500-in-structural-projects.php"><img src="images/BIM model progression in engineering design.png" alt="BIM LOD Explained"></a></div>
+<div class="post-date">August 2025</div>
+<h4><a href="bim-lod-explained-from-lod-100-to-lod-500-in-structural-projects.php">BIM LOD Explained: From LOD 100 to LOD 500 in Structural Projects</a></h4>
+</div>
+</div>
+</div>
+</div>
 
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Sidebar Side -->
-				<div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
-					<aside class="sidebar sticky-top">
-
-						<div class="sidebar-widget search-box">
-							<div class="sidebar-title"><h4>Search</h4></div>
-							<div class="widget-content">
-								<form method="post" action="blog.php">
-									<div class="form-group">
-										<input type="search" name="search-field" value="" placeholder="Search Now" required>
-										<button type="submit"><span class="icon fa fa-search"></span></button>
-									</div>
-								</form>
-							</div>
-						</div>
-
-						<div class="sidebar-widget post-widget">
-							<div class="widget-content">
-								<div class="sidebar-title"><h4>Recent Posts</h4></div>
-								<div class="content">
-									<div class="post">
-										<div class="thumb"><a href="what-goes-into-a-complete-steel-shop-drawing-package.php"><img src="images/commercial%20projects.png" alt="Shop Drawings"></a></div>
-										<div class="post-date">September 2025</div>
-										<h4><a href="what-goes-into-a-complete-steel-shop-drawing-package.php">What Goes Into a Complete Steel Shop Drawing Package?</a></h4>
-									</div>
-									<div class="post">
-										<div class="thumb"><a href="why-structural-design-accuracy-is-critical-before-construction-begins.php"><img src="assets/images/section/placeholder-structure-c.svg" alt="Structural Design"></a></div>
-										<div class="post-date">January 2025</div>
-										<h4><a href="why-structural-design-accuracy-is-critical-before-construction-begins.php">Why Structural Design Accuracy is Critical Before Construction</a></h4>
-									</div>
-									<div class="post">
-										<div class="thumb"><a href="how-bim-coordination-reduces-clashes-and-costly-rework-on-construction-projects.php"><img src="images/2024-10-20.webp" alt="BIM Coordination"></a></div>
-										<div class="post-date">February 2025</div>
-										<h4><a href="how-bim-coordination-reduces-clashes-and-costly-rework-on-construction-projects.php">How BIM Coordination Reduces Clashes and Costly Rework</a></h4>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="sidebar-widget category-widget">
+<div class="sidebar-widget category-widget">
 							<div class="widget-content">
 								<div class="sidebar-title"><h4>Categories</h4></div>
 								<ul class="category-list_two">
@@ -258,3 +195,10 @@
 
 
 <?php include('footer.php'); ?>
+
+
+
+
+
+
+

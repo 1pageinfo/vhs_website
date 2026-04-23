@@ -61,9 +61,6 @@
 											<span class="text-two">Work With Us</span>
 										</span>
 									</a>
-									<div class="slider-one_video">
-										<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
-									</div>
 								</div>
 								<div class="slider-one_arrow" style="background-image:url(assets/images/main-slider/vector-2.png)"></div>
 							</div>
@@ -89,9 +86,6 @@
 											<span class="text-two">Work With Us</span>
 										</span>
 									</a>
-									<div class="slider-one_video">
-										<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
-									</div>
 								</div>
 								<div class="slider-one_arrow" style="background-image:url(assets/images/main-slider/vector-2.png)"></div>
 							</div>
@@ -117,9 +111,6 @@
 											<span class="text-two">Work With Us</span>
 										</span>
 									</a>
-									<div class="slider-one_video">
-										<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-video play-box"><span class="fa fa-play"></span></a>
-									</div>
 								</div>
 								<div class="slider-one_arrow" style="background-image:url(assets/images/main-slider/vector-2.png)"></div>
 							</div>
@@ -321,7 +312,6 @@
 				<div class="cred-item"><i class="fa-solid fa-book-open"></i><span><strong>AISC / CISC / BS / IS</strong> Code Compliant</span></div>
 				<div class="cred-item"><i class="fa-solid fa-cube"></i><span><strong>Tekla &bull; Revit &bull; SDS/2 &bull; AutoCAD</strong> Software</span></div>
 				<div class="cred-item"><i class="fa-solid fa-earth-americas"></i><span>Serving clients across <strong>10+ Countries</strong></span></div>
-				<div class="cred-item"><i class="fa-solid fa-clock"></i><span><strong>On-time Delivery</strong> Every Project</span></div>
 			</div>
 		</div>
 	</div>
@@ -474,28 +464,24 @@
 					<img src="images/hero banner for service 1.png" alt="Structural Design & Consultancy" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">Structural Design</span>
-						<h3>Structural Design & Consultancy</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
 					<img src="images/BIM BANNER.png" alt="BIM Services" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">BIM &amp; Detailing</span>
-						<h3>BIM Services</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
 					<img src="images/placeholder-structure-c.png" alt="Estimodelling & Pre-Bid Services" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">EstiModelling</span>
-						<h3>Estimodelling & Pre-Bid Services</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
 					<img src="images/STRUCTURAL DESIGN.png" alt="Connection Design" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">Steel Connections</span>
-						<h3>Connection Design Services</h3>
 					</div>
 				</div>
 
@@ -503,14 +489,12 @@
 					<img src="images/steel services.png" alt="Recent steel project" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">Steel Detailing Services</span>
-						<h3>Steel Detailing Services</h3>
 					</div>
 				</div>
 				<div class="vhs-sector-card">
 					<img src="images/deputation.png" alt="Deputation Services" />
 					<div class="vhs-sector-overlay">
 						<span class="vhs-sector-tag">Deputation Services</span>
-						<h3>Deputation Services</h3>
 					</div>
 				</div>
 			</div>

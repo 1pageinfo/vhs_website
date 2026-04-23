@@ -385,7 +385,7 @@
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
-    text-shadow: 0 17px 0 var(--main-color);
+    text-shadow: 0 17px 0 #1880da;
 }
 
 .main-header .sticky-header .main-menu .navigation > li > a .menu-text{
@@ -679,7 +679,7 @@
 
 .main-header .main-menu .navigation > li > ul > li > a:hover{
 	color: var(--white-color);
-	background-color: var(--main-color);
+	background-color: #1880da;
 }
 
 .main-header .main-menu .navigation > li > ul > li.dropdown > a:after{
