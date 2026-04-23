@@ -67,7 +67,7 @@
 <!-- Service Block Three -->
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url('images/STRUCTURAL%20DESIGN.png')"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/hero%20banner%20for%20service%201.png')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-1.svg" alt="Structural Design & Consultancy" /></div>
@@ -93,7 +93,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url('images/How%20Accurate%20Pre-Bid%20Estimating%20Gives%20Contractors%20a%20Competitive%20Edge.png')"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/placeholder-structure-c.png')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-3.svg" alt="Estimodelling & Pre-Bid Services" /></div>
@@ -106,7 +106,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url('images/Connection%20Design%20in%20Steel%20Structures.png')"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/STRUCTURAL%20DESIGN.png')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-4.svg" alt="Connection Design Services" /></div>
@@ -145,7 +145,7 @@
 
 <div class="service-block_three col-lg-4 col-md-6 col-sm-12">
 <div class="service-block_three-inner">
-<div class="service-block_three_hover-image" style="background-image:url('images/miscellanous.png')"></div>
+<div class="service-block_three_hover-image" style="background-image:url('images/other%20serviecs.png')"></div>
 <div class="service-block_three-pattern" style="background-image:url(assets/images/background/service-1_bg.jpg)"></div>
 <div class="service-block_three-upper">
 <div class="service-block_three-icon"><img src="assets/images/icons/service-1.svg" alt="Other Engineering Services" /></div>
