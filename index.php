@@ -461,41 +461,23 @@
 			</div>
 			<div class="vhs-sectors-grid">
 				<div class="vhs-sector-card">
-					<img src="images/hero banner for service 1.png" alt="Structural Design & Consultancy" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Structural Design</span>
-					</div>
+					<img src="images/PARK-MANOR-STORAGE.png" alt="Park Manor Storage project" />
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/BIM BANNER.png" alt="BIM Services" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">BIM &amp; Detailing</span>
-					</div>
+					<img src="images/caterpillar.png" alt="Caterpillar Business Park project" />
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/placeholder-structure-c.png" alt="Estimodelling & Pre-Bid Services" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">EstiModelling</span>
-					</div>
+					<img src="images/The-Watermark-At-Napa-Valley.png" alt="The Watermark at Napa Valley project" />
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/STRUCTURAL DESIGN.png" alt="Connection Design" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Steel Connections</span>
-					</div>
+					<img src="images/DISTRIBUTION BUILDING.png" alt="Distribution Building project" />
 				</div>
 
 				<div class="vhs-sector-card">
-					<img src="images/steel services.png" alt="Recent steel project" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Steel Detailing Services</span>
-					</div>
+					<img src="images/Courtyard-Marriott-Santa-Cruz.png" alt="Courtyard Marriott project" />
 				</div>
 				<div class="vhs-sector-card">
-					<img src="images/deputation.png" alt="Deputation Services" />
-					<div class="vhs-sector-overlay">
-						<span class="vhs-sector-tag">Deputation Services</span>
-					</div>
+					<img src="images/TRYP-Hotel.png" alt="TRYP Hotel project" />
 				</div>
 			</div>
 			<div style="text-align:center;margin-top:36px;">
