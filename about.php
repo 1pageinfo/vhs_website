@@ -1,634 +1,955 @@
 <?php include('header.php'); ?>
 
 <style>
-.about-premium {
-    --steel-900: #0f1720;
-    --steel-850: #131e29;
-    --steel-800: #1a2734;
-    --steel-700: #263646;
-    --steel-500: #4f6e8f;
-    --steel-300: #b8c7d9;
-    --steel-200: #d8e1eb;
-    --spark: #f58f3d;
-    --spark-soft: rgba(245, 143, 61, 0.2);
-    --line: rgba(255, 255, 255, 0.09);
-    background: radial-gradient(circle at 90% 10%, rgba(79, 110, 143, 0.2), transparent 42%),
-        linear-gradient(180deg, #0f1720 0%, #141f2a 35%, #0f1720 100%);
-    color: #ffffff;
+.about-unique {
+    --au-bg: #ffffff;
+    --au-ink: #12263b;
+    --au-copy: #4f647b;
+    --au-line: rgba(18, 38, 59, 0.14);
+    --au-blue: #1880da;
+    --au-sky: #38bdf8;
+    --au-panel: #ffffff;
+    background: #ffffff;
 }
 
-.about-premium .auto-container {
+.about-unique .auto-container {
     position: relative;
     z-index: 2;
 }
 
-.about-hero {
-    position: relative;
-    padding: 120px 0 90px;
-    overflow: hidden;
+.au-hero {
+    padding: 104px 0 78px;
+    min-height: calc(100vh - 96px);
+    display: flex;
+    align-items: center;
+    background: radial-gradient(circle at 12% 20%, rgba(56, 189, 248, 0.16), transparent 38%),
+        linear-gradient(120deg, #0d2238 0%, #123556 56%, #133d63 100%);
 }
 
-.about-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(15, 23, 32, 0.93) 0%, rgba(15, 23, 32, 0.72) 45%, rgba(15, 23, 32, 0.42) 100%),
-        url('images/about.png') center/cover no-repeat;
-}
-
-.about-hero-grid {
+.au-hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 36px;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 28px;
     align-items: center;
 }
 
-.steel-tag {
+.au-hero-copy {
+    padding: 10px 8px 10px 0;
+    max-width: 720px;
+}
+
+.au-kicker {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 16px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.05);
 }
 
-.steel-tag::before {
+.au-kicker::before {
     content: "";
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--spark);
-    box-shadow: 0 0 0 6px var(--spark-soft);
-}
-
-.about-hero h1 {
-    margin: 20px 0 14px;
-    font-size: 54px;
-    line-height: 1.06;
-    letter-spacing: -0.8px;
-    color: #f5f8fc;
-}
-
-.about-hero p {
-    margin: 0;
-    font-size: 17px;
-    line-height: 1.8;
-    max-width: 760px;
-    color: var(--steel-200);
-}
-
-.hero-metrics {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-}
-
-.hero-metric {
-    background: linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 18px;
-    backdrop-filter: blur(2px);
-    animation: riseIn 0.7s ease both;
-}
-
-.hero-metric:nth-child(2) { animation-delay: 0.08s; }
-.hero-metric:nth-child(3) { animation-delay: 0.16s; }
-.hero-metric:nth-child(4) { animation-delay: 0.24s; }
-
-.hero-metric h3 {
-    margin: 0;
-    font-size: 34px;
-    line-height: 1;
-    color: #ffffff;
-}
-
-.hero-metric span {
-    display: block;
-    margin-top: 6px;
-    color: var(--steel-300);
-    font-size: 13px;
-    letter-spacing: 0.3px;
-}
-
-.steel-section {
-    padding: 88px 0;
-}
-
-.section-head {
-    margin-bottom: 34px;
-}
-
-.section-head h2 {
-    margin: 10px 0 0;
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-    color: #f3f7fb;
-}
-
-.section-head p {
-    margin: 14px 0 0;
-    font-size: 16px;
-    line-height: 1.8;
-    color: var(--steel-300);
-}
-
-.about-story {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-}
-
-.story-panel {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-    border: 1px solid var(--line);
-    border-radius: 18px;
-    padding: 28px;
-    position: relative;
-    overflow: hidden;
-}
-
-.story-panel::after {
-    content: "";
-    position: absolute;
-    inset: auto 0 0 0;
+    width: 18px;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--spark), transparent);
+    background: currentColor;
 }
 
-.story-panel h3 {
-    font-size: 25px;
-    margin: 0 0 12px;
+.au-kicker.light {
+    color: #9fd9ff;
+}
+
+.au-kicker.dark {
+    color: var(--au-blue);
+}
+
+.au-hero h1 {
+    margin: 14px 0 16px;
     color: #ffffff;
+    font-size: 62px;
+    line-height: 1.08;
+    letter-spacing: -0.9px;
 }
 
-.story-panel p {
+.au-hero p {
     margin: 0;
-    font-size: 15px;
-    line-height: 1.85;
-    color: var(--steel-300);
+    max-width: 700px;
+    color: #dceaf8;
+    font-size: 17px;
+    line-height: 1.82;
 }
 
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+.au-hero-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px;
 }
 
-.service-card {
-    background: var(--steel-850);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 22px;
-    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-    border-color: rgba(245, 143, 61, 0.5);
-    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.25);
-}
-
-.service-card .num {
-    color: var(--spark);
-    font-size: 13px;
-    letter-spacing: 1px;
+.au-pill {
+    border: 1px solid rgba(159, 217, 255, 0.34);
+    color: #e8f5ff;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 9px 14px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
     font-weight: 700;
 }
 
-.service-card h4 {
-    margin: 8px 0 8px;
-    font-size: 20px;
-    color: #f7f9fd;
-}
-
-.service-card p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.75;
-    color: var(--steel-300);
-}
-
-.quality-grid {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    gap: 26px;
-    align-items: start;
-}
-
-.quality-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: grid;
-    gap: 12px;
-}
-
-.quality-list li {
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 12px;
-    padding: 14px 16px 14px 44px;
+.au-hero-visual {
     position: relative;
-    color: var(--steel-200);
-    font-size: 15px;
-    line-height: 1.6;
-}
-
-.quality-list li::before {
-    content: "";
-    position: absolute;
-    left: 18px;
-    top: 20px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--spark);
-}
-
-.iso-card {
-    border-radius: 18px;
-    border: 1px solid rgba(245, 143, 61, 0.35);
-    background: linear-gradient(180deg, rgba(245, 143, 61, 0.16), rgba(245, 143, 61, 0.06));
-    padding: 26px;
-}
-
-.iso-card h3 {
-    margin: 0;
-    font-size: 48px;
-    line-height: 1;
-    color: #ffffff;
-}
-
-.iso-card p {
-    margin: 10px 0 0;
-    color: #f8d8bf;
-    line-height: 1.7;
-    font-size: 15px;
-}
-
-.iso-logos {
-    margin-top: 18px;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.iso-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    min-height: 64px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.iso-logo img {
-    max-width: 100%;
-    max-height: 44px;
-    object-fit: contain;
-    filter: brightness(1.03) contrast(1.05);
-}
-
-.counter-strip {
-    background: linear-gradient(90deg, #111a24, #1a2838, #111a24);
-    border-top: 1px solid var(--line);
-    border-bottom: 1px solid var(--line);
-    padding: 38px 0;
-}
-
-.counter-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-}
-
-.counter-box {
-    text-align: center;
-    padding: 16px;
-    border-right: 1px solid var(--line);
-}
-
-.counter-box:last-child {
-    border-right: 0;
-}
-
-.counter-box h4 {
-    margin: 0;
-    font-size: 42px;
-    color: #ffffff;
-}
-
-.counter-box p {
-    margin: 10px 0 0;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--steel-300);
-}
-
-.about-cta {
-    padding: 92px 0;
-    text-align: center;
-    position: relative;
+    background: linear-gradient(145deg, rgba(10, 42, 72, 0.36), rgba(24, 128, 218, 0.08)), url('images/about.png') center/cover no-repeat;
+    border: 1px solid rgba(185, 218, 245, 0.34);
+    border-radius: 22px;
+    box-shadow: 0 22px 40px rgba(7, 20, 33, 0.35);
+    min-height: 420px;
     overflow: hidden;
 }
 
-.about-cta::before,
-.about-cta::after {
+.au-hero-visual::before {
     content: "";
     position: absolute;
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: 0;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(7, 20, 33, 0.12), rgba(7, 20, 33, 0.52));
 }
 
-.about-cta::before {
-    left: -120px;
-    top: 20px;
-    background: rgba(79, 110, 143, 0.23);
+.au-hero-photo-note {
+    position: absolute;
+    left: 18px;
+    right: 18px;
+    bottom: 16px;
+    padding: 10px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    background: rgba(8, 24, 41, 0.45);
+    color: #e9f4ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
-.about-cta::after {
-    right: -120px;
-    bottom: 10px;
-    background: rgba(245, 143, 61, 0.2);
+
+.au-nav-wrap {
+    margin-top: -24px;
 }
 
-.about-cta .cta-inner {
-    position: relative;
-    z-index: 1;
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.04);
-    padding: 46px 24px;
-}
-
-.about-cta h2 {
+.au-nav {
+    list-style: none;
     margin: 0;
-    font-size: 42px;
+    padding: 14px;
+    border: 1px solid rgba(18, 38, 59, 0.14);
+    border-radius: 16px;
+    background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+    box-shadow: 0 14px 30px rgba(18, 38, 59, 0.11);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+}
+
+.au-nav li {
+    flex: 0 0 auto;
+}
+
+.au-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    text-decoration: none;
+    border: 1px solid rgba(18, 38, 59, 0.12);
+    border-radius: 999px;
+    padding: 9px 16px;
+    background: #ffffff;
+    color: #4f647b;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.55px;
+    font-weight: 700;
+    transition: all 0.22s ease;
+}
+
+.au-nav a:hover {
+    background: #eef7ff;
+    color: #123556;
+    border-color: rgba(24, 128, 218, 0.35);
+}
+
+.au-section {
+    padding: 80px 0;
+    scroll-margin-top: 110px;
+}
+
+.au-section.alt {
+    background: #ffffff;
+}
+
+.au-head {
+    margin-bottom: 26px;
+}
+
+.au-head h2 {
+    margin: 10px 0 0;
+    font-size: 38px;
     line-height: 1.2;
-    color: #f5f8fc;
+    color: var(--au-ink);
+    letter-spacing: -0.45px;
 }
 
-.about-cta p {
-    margin: 14px auto 26px;
-    max-width: 720px;
-    color: var(--steel-300);
+.au-head p {
+    margin: 12px 0 0;
+    color: var(--au-copy);
+    max-width: 860px;
+    line-height: 1.85;
     font-size: 16px;
+}
+
+.au-about-layout {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 20px;
+}
+
+.au-manifesto {
+    border: 1px solid var(--au-line);
+    border-left: 4px solid #1880da;
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 26px 24px;
+}
+
+.au-manifesto p {
+    margin: 0;
+    color: var(--au-copy);
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.au-ring {
+    border: 1px solid var(--au-line);
+    border-radius: 14px;
+    background: linear-gradient(160deg, #ffffff, #f5faff);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.au-ring-mark {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    border: 8px solid rgba(24, 128, 218, 0.18);
+    position: relative;
+    flex-shrink: 0;
+}
+
+.au-ring-mark::after {
+    content: "2017";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--au-blue);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.au-ring h4 {
+    margin: 0 0 6px;
+    font-size: 21px;
+    color: var(--au-ink);
+}
+
+.au-ring p {
+    margin: 0;
+    color: var(--au-copy);
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.au-editorial {
+    columns: 2;
+    column-gap: 24px;
+}
+
+.au-editorial p {
+    margin: 0 0 14px;
+    color: var(--au-copy);
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.au-sector-mosaic {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 122px;
+    gap: 12px;
+}
+
+.au-tile {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.au-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.au-tile::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 20%, rgba(7, 23, 43, 0.78));
+}
+
+.au-tile span {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+.au-tile.t1 { grid-column: span 4; grid-row: span 2; }
+.au-tile.t2 { grid-column: span 4; grid-row: span 1; }
+.au-tile.t3 { grid-column: span 4; grid-row: span 2; }
+.au-tile.t4 { grid-column: span 3; grid-row: span 1; }
+.au-tile.t5 { grid-column: span 5; grid-row: span 1; }
+.au-tile.t6 { grid-column: span 4; grid-row: span 1; }
+
+.au-timeline {
+    position: relative;
+    margin: 2px 0 0;
+    padding-left: 34px;
+}
+
+.au-timeline::before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(180deg, #38bdf8, #1880da);
+}
+
+.au-step {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 0 0 6px;
+}
+
+.au-step:last-child {
+    margin-bottom: 0;
+}
+
+.au-step::before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #1880da;
+}
+
+.au-step h4 {
+    margin: 0 0 6px;
+    color: var(--au-ink);
+    font-size: 20px;
+}
+
+.au-step p {
+    margin: 0;
+    color: var(--au-copy);
     line-height: 1.8;
+    font-size: 15px;
 }
 
-.about-cta .theme-btn {
-    min-width: 220px;
+.au-mv {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--au-line);
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-@keyframes riseIn {
-    from {
-        opacity: 0;
-        transform: translateY(16px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.au-mv-item {
+    padding: 28px 24px;
+}
+
+.au-mv-item:first-child {
+    background: linear-gradient(150deg, #f8fbff, #eef5fc);
+    border-right: 1px solid var(--au-line);
+}
+
+.au-mv-item h3 {
+    margin: 0 0 10px;
+    color: var(--au-ink);
+    font-size: 27px;
+}
+
+.au-mv-item p {
+    margin: 0;
+    color: var(--au-copy);
+    line-height: 1.85;
+    font-size: 15px;
+}
+
+.au-team-lanes {
+    border: 1px solid var(--au-line);
+    border-radius: 16px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.au-lane {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    border-bottom: 1px solid var(--au-line);
+}
+
+.au-lane:last-child {
+    border-bottom: 0;
+}
+
+.au-lane-head {
+    background: #f3f9ff;
+    color: var(--au-blue);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 16px;
+    border-right: 1px solid var(--au-line);
+}
+
+.au-lane-body {
+    padding: 18px 16px;
+}
+
+.au-lane-body h4 {
+    margin: 0 0 6px;
+    color: var(--au-ink);
+    font-size: 20px;
+}
+
+.au-lane-body p {
+    margin: 0;
+    color: var(--au-copy);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.au-cred-wrap {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 16px;
+}
+
+.au-standards {
+    border: 1px solid var(--au-line);
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 22px 20px;
+}
+
+.au-standards ul {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--au-copy);
+}
+
+.au-standards li {
+    margin-bottom: 9px;
+    line-height: 1.75;
+}
+
+.au-logos {
+    border: 1px solid var(--au-line);
+    border-radius: 14px;
+    background: #ffffff;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.au-logo {
+    min-height: 72px;
+    border: 1px solid rgba(18, 38, 59, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fbff;
+}
+
+.au-logo img {
+    max-width: 90%;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.au-achievements {
+    padding: 64px 0;
+    background: linear-gradient(135deg, #0f2237, #133a5d);
+}
+
+.au-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.au-stat {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.au-stat:last-child {
+    border-right: 0;
+}
+
+.au-stat h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.au-stat p {
+    margin: 8px 0 0;
+    color: #c7dbef;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.au-value-matrix {
+    border: 1px solid var(--au-line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.au-matrix-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid var(--au-line);
+}
+
+.au-matrix-row:last-child {
+    border-bottom: 0;
+}
+
+.au-matrix-key {
+    background: #f3f9ff;
+    padding: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--au-blue);
+    border-right: 1px solid var(--au-line);
+}
+
+.au-matrix-val {
+    padding: 16px;
+    color: var(--au-copy);
+    line-height: 1.75;
+    font-size: 15px;
 }
 
 @media (max-width: 1199px) {
-    .about-hero h1,
-    .about-cta h2,
-    .section-head h2 {
-        font-size: 36px;
+    .au-hero h1,
+    .au-head h2 {
+        font-size: 35px;
     }
 
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .au-hero h1 {
+        font-size: 52px;
+    }
+
+    .au-sector-mosaic {
+        grid-auto-rows: 118px;
     }
 }
 
 @media (max-width: 991px) {
-    .about-hero {
-        padding: 96px 0 76px;
+    .au-hero {
+        padding: 88px 0 72px;
+        min-height: calc(100vh - 82px);
+        background: linear-gradient(180deg, #10283f 0%, #154468 100%);
     }
 
-    .about-hero-grid,
-    .about-story,
-    .quality-grid {
+        gap: 8px;
+        padding: 12px 10px;
+    .au-cred-wrap,
+    .au-mv,
+    .au-matrix-row {
+        margin-top: -16px;
+    }
+
+    .au-lane {
         grid-template-columns: 1fr;
+        padding: 8px 11px;
+        min-height: 38px;
+
+    .au-lane-head,
+    .au-matrix-key {
+        border-right: 0;
+        border-bottom: 1px solid var(--au-line);
     }
 
-    .counter-grid {
+    .au-logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .au-stats {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .counter-box {
+    .au-stat {
         border-right: 0;
-        border-bottom: 1px solid var(--line);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 16px;
     }
 
-    .counter-box:nth-last-child(-n+2) {
+    .au-stat:nth-last-child(-n+2) {
         border-bottom: 0;
+    }
+
+    .au-editorial {
+        columns: 1;
+    }
+
+    .au-sector-mosaic {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .au-tile.t1,
+    .au-tile.t2,
+    .au-tile.t3,
+    .au-tile.t4,
+    .au-tile.t5,
+    .au-tile.t6 {
+        grid-column: span 3;
+        grid-row: span 1;
     }
 }
 
 @media (max-width: 767px) {
-    .about-hero h1,
-    .about-cta h2,
-    .section-head h2 {
-        font-size: 30px;
+    .au-hero {
+        min-height: calc(100vh - 74px);
     }
 
-    .hero-metrics,
-    .service-grid,
-    .counter-grid {
+    .au-hero h1,
+    .au-head h2 {
+        font-size: 29px;
+    }
+
+    .au-nav {
+        gap: 6px 12px;
+        padding: 6px 0;
+    }
+
+    .au-nav-wrap {
+        margin-top: -12px;
+    }
+
+    .au-nav a {
+        font-size: 10px;
+        padding: 6px 1px;
+    }
+
+    .au-section {
+        padding: 64px 0;
+    }
+
+    .au-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .au-stats {
         grid-template-columns: 1fr;
     }
 
-    .counter-box {
-        border-bottom: 1px solid var(--line);
+    .au-stat {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .counter-box:last-child {
+    .au-stat:last-child {
         border-bottom: 0;
     }
 
-    .iso-logos {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    .au-sector-mosaic {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 170px;
+    }
+
+    .au-tile.t1,
+    .au-tile.t2,
+    .au-tile.t3,
+    .au-tile.t4,
+    .au-tile.t5,
+    .au-tile.t6 {
+        grid-column: span 1;
     }
 }
 </style>
 
-<main class="about-premium">
-    <section class="about-hero">
+<main class="about-unique">
+    <section class="au-hero">
         <div class="auto-container">
-            <div class="about-hero-grid">
-                <div>
-                    <span class="steel-tag">About VHS Engineering</span>
-                    <h1>Precision Steel Detailing for Buildable, On-Time Projects</h1>
-                    <p>VHS Engineering is an ISO 9001-2015 certified structural steel design and detailing company committed to quality, schedule, and clear communication to build strong customer relationships.</p>
-                </div>
-                <div class="hero-metrics">
-                    <div class="hero-metric">
-                        <h3>2017</h3>
-                        <span>Established</span>
-                    </div>
-                    <div class="hero-metric">
-                        <h3>7+</h3>
-                        <span>Years of Excellence</span>
-                    </div>
-                    <div class="hero-metric">
-                        <h3>100+</h3>
-                        <span>Projects Completed</span>
-                    </div>
-                    <div class="hero-metric">
-                        <h3>98%</h3>
-                        <span>Client Satisfaction</span>
+            <div class="au-hero-grid">
+                <div class="au-hero-copy">
+                    <span class="au-kicker light">About</span>
+                    <h1>VHS Engineering</h1>
+                    <p>We are a structural steel engineering company delivering design, detailing, and BIM coordination services with global project exposure, disciplined quality systems, and practical execution support.</p>
+                    <div class="au-hero-metrics">
+                        <span class="au-pill">ISO 9001-2015</span>
+                        <span class="au-pill">100+ Projects</span>
+                        <span class="au-pill">10+ Countries</span>
+                        <span class="au-pill">Since 2017</span>
                     </div>
                 </div>
+                <div class="au-hero-visual" aria-hidden="true"></div>
             </div>
         </div>
     </section>
 
-    <section class="steel-section">
+    <section class="au-nav-wrap">
         <div class="auto-container">
-            <div class="section-head">
-                <span class="steel-tag">Who We Are</span>
-                <h2>Leading Structural Steel Design and Detailing Company</h2>
-                <p>We specialize in engineering-led steel detailing workflows that support constructability, coordination, and execution from design intent to fabrication-ready output.</p>
-            </div>
-
-            <div class="about-story">
-                <article class="story-panel">
-                    <h3>Our Mission</h3>
-                    <p>We provide high quality structural engineering services and solutions while using innovative technologies and continuous improvement, maintaining the highest business standards and work ethics that add measurable value for clients and partners.</p>
-                </article>
-                <article class="story-panel">
-                    <h3>Our Vision</h3>
-                    <p>Our solutions are designed to meet the demands of modern construction enterprises so they can execute confidently in a competitive market with speed, reliability, and technical clarity.</p>
-                </article>
-            </div>
+            <ul class="au-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#who-we-are">Who We Are</a></li>
+                <li><a href="#sectors">Sectors We Serve</a></li>
+                <li><a href="#approach">Our Approach</a></li>
+                <li><a href="#mission-vision">Our Mission &amp; Vision</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#credentials">Our Credentials</a></li>
+                <li><a href="#achievements">Our Achievements</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+            </ul>
         </div>
     </section>
 
-    <section class="steel-section" style="padding-top: 0;">
+    <section class="au-section" id="about">
         <div class="auto-container">
-            <div class="section-head">
-                <span class="steel-tag">What We Deliver</span>
-                <h2>Integrated Services for Steel Projects</h2>
+            <div class="au-head">
+                <span class="au-kicker dark">About</span>
+                <h2>Company Profile</h2>
+                <p>VHS Engineering is an ISO 9001-2015 certified structural steel engineering company established in 2017. We support fabricators, contractors, and consultants through dependable technical delivery and a quality-led project culture.</p>
             </div>
-
-            <div class="service-grid">
-                <article class="service-card">
-                    <div class="num">01</div>
-                    <h4>Structural Steel Design</h4>
-                    <p>Code-compliant structural design and consultancy to support safe, economical, and buildable solutions.</p>
-                </article>
-                <article class="service-card">
-                    <div class="num">02</div>
-                    <h4>Steel Detailing Services</h4>
-                    <p>Detailed shop and fabrication drawings developed with constructability in focus for complex steel structures.</p>
-                </article>
-                <article class="service-card">
-                    <div class="num">03</div>
-                    <h4>BIM Services</h4>
-                    <p>Model-based coordination for better clash control, visualization, and project communication across stakeholders.</p>
-                </article>
-                <article class="service-card">
-                    <div class="num">04</div>
-                    <h4>Connection Design</h4>
-                    <p>Engineered steel connections aligned with project load paths, standards, and fabrication requirements.</p>
-                </article>
-                <article class="service-card">
-                    <div class="num">05</div>
-                    <h4>Estimodelling</h4>
-                    <p>Pre-bid quantity and model-driven estimation support to improve bid accuracy and reduce commercial risk.</p>
-                </article>
-                <article class="service-card">
-                    <div class="num">06</div>
-                    <h4>Deputation Services</h4>
-                    <p>Flexible engineering resource support for teams that need specialized structural steel expertise.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="steel-section" style="padding-top: 0;">
-        <div class="auto-container">
-            <div class="quality-grid">
-                <div>
-                    <div class="section-head" style="margin-bottom: 18px;">
-                        <span class="steel-tag">Why Clients Trust Us</span>
-                        <h2>Quality, Standards, and Delivery Discipline</h2>
-                    </div>
-                    <ul class="quality-list">
-                        <li>ISO 9001-2015 Quality Certified Company</li>
-                        <li>Expertise in AISC, CISC, BS, and IS Codes</li>
-                        <li>On-time Delivery with Strict Quality Assurance</li>
-                        <li>Professional Communication and Client Coordination</li>
-                        <li>Continuous Improvement Through Innovative Technologies</li>
-                    </ul>
+            <div class="au-about-layout">
+                <div class="au-manifesto">
+                    <p>Our business is built around technical accuracy, delivery discipline, and practical project collaboration. We believe engineering value is created when design intent, fabrication constraints, and site realities are aligned early. This approach reduces uncertainty, supports better decisions, and helps teams execute with confidence.</p>
                 </div>
-                <aside class="iso-card">
-                    <h3>9001</h3>
-                    <p>ISO 9001-2015 certified processes integrated into every design and detailing deliverable.</p>
-                    <p style="margin-top: 16px;">Engagement model: We work directly with individuals for private residences and also partner with businesses on larger projects.</p>
-                    <div class="iso-logos">
-                        <div class="iso-logo"><img src="images/certifications/1.png" alt="Certification 1" /></div>
-                        <div class="iso-logo"><img src="images/certifications/2.png" alt="Certification 2" /></div>
-                        <div class="iso-logo"><img src="images/certifications/3.png" alt="Certification 3" /></div>
-                        <div class="iso-logo"><img src="images/certifications/4.png" alt="Certification 4" /></div>
-                        <div class="iso-logo"><img src="images/certifications/5.png" alt="Certification 5" /></div>
-                        <div class="iso-logo"><img src="images/certifications/6.png" alt="Certification 6" /></div>
-                        <div class="iso-logo"><img src="images/certifications/7.png" alt="Certification 7" /></div>
+                <aside class="au-ring">
+                    <div class="au-ring-mark"></div>
+                    <div>
+                        <h4>Established In 2017</h4>
+                        <p>A steadily growing engineering organization focused on structural steel design, BIM coordination, and detailing excellence.</p>
                     </div>
                 </aside>
             </div>
         </div>
     </section>
 
-    <section class="counter-strip">
+    <section class="au-section alt" id="who-we-are">
         <div class="auto-container">
-            <div class="counter-grid">
-                <div class="counter-box">
-                    <h4>7+</h4>
-                    <p>Years of Excellence</p>
+            <div class="au-head">
+                <span class="au-kicker dark">Who We Are</span>
+                <h2>Engineering Specialists In Structural Steel</h2>
+            </div>
+            <div class="au-editorial">
+                <p>VHS Engineering combines engineering judgment with modern digital workflows to deliver clear, coordinated, and fabrication-ready outputs. Our teams work with established standards and robust review systems to ensure consistency in every stage of project delivery.</p>
+                <p>We collaborate with fabricators, EPC teams, contractors, and consultants across regions. By keeping communication structured and transparent, we support faster issue resolution and reliable progress through design, detailing, and execution phases.</p>
+                <p>Our strength lies in balancing technical rigor with practical constructability. The result is work that is not only code-compliant, but also usable for production and site implementation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-section" id="sectors">
+        <div class="auto-container">
+            <div class="au-head">
+                <span class="au-kicker dark">Sectors We Serve</span>
+                <h2>Project Environments We Support</h2>
+            </div>
+            <div class="au-sector-mosaic">
+                <figure class="au-tile t1"><img src="images/PARK-MANOR-STORAGE.png" alt="Commercial steel project" /><span>Commercial Buildings</span></figure>
+                <figure class="au-tile t2"><img src="images/caterpillar.png" alt="Industrial steel project" /><span>Industrial Facilities</span></figure>
+                <figure class="au-tile t3"><img src="images/The-Watermark-At-Napa-Valley.png" alt="Hospitality structure" /><span>Hospitality & Mixed-Use</span></figure>
+                <figure class="au-tile t4"><img src="images/DISTRIBUTION BUILDING.png" alt="Distribution building" /><span>Infrastructure</span></figure>
+                <figure class="au-tile t5"><img src="images/Courtyard-Marriott-Santa-Cruz.png" alt="Institutional project" /><span>Institutional & Public Works</span></figure>
+                <figure class="au-tile t6"><img src="images/TRYP-Hotel.png" alt="Special steel work" /><span>Special Steel Applications</span></figure>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-section alt" id="approach">
+        <div class="auto-container">
+            <div class="au-head">
+                <span class="au-kicker dark">Our Approach</span>
+                <h2>Structured Delivery Lifecycle</h2>
+            </div>
+            <div class="au-timeline">
+                <article class="au-step">
+                    <h4>Scope Alignment</h4>
+                    <p>Define standards, deliverables, interfaces, and milestones with stakeholders at project start.</p>
+                </article>
+                <article class="au-step">
+                    <h4>Engineering Development</h4>
+                    <p>Build models and details with emphasis on constructability, code compliance, and coordination quality.</p>
+                </article>
+                <article class="au-step">
+                    <h4>Quality Review</h4>
+                    <p>Apply internal checkpoints before issue to reduce revisions and improve downstream certainty.</p>
+                </article>
+                <article class="au-step">
+                    <h4>Execution Support</h4>
+                    <p>Respond to RFIs, updates, and design clarifications through fabrication and erection stages.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-section" id="mission-vision">
+        <div class="auto-container">
+            <div class="au-head">
+                <span class="au-kicker dark">Our Mission &amp; Vision</span>
+                <h2>Long-Term Commitment To Engineering Value</h2>
+            </div>
+            <div class="au-mv">
+                <article class="au-mv-item">
+                    <h3>Our Mission</h3>
+                    <p>To deliver dependable and technically sound structural steel engineering outputs that help project teams execute safely, efficiently, and with clarity.</p>
+                </article>
+                <article class="au-mv-item">
+                    <h3>Our Vision</h3>
+                    <p>To be a globally trusted engineering partner recognized for quality discipline, transparent collaboration, and consistent delivery standards.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-section alt" id="team">
+        <div class="auto-container">
+            <div class="au-head">
+                <span class="au-kicker dark">Our Team</span>
+                <h2>Multi-Disciplinary Project Organization</h2>
+            </div>
+            <div class="au-team-lanes">
+                <div class="au-lane">
+                    <div class="au-lane-head">Leadership</div>
+                    <div class="au-lane-body">
+                        <h4>Engineering Management</h4>
+                        <p>Leads technical governance, project priorities, and stakeholder communication.</p>
+                    </div>
                 </div>
-                <div class="counter-box">
-                    <h4>100+</h4>
-                    <p>Projects Completed</p>
+                <div class="au-lane">
+                    <div class="au-lane-head">Core Delivery</div>
+                    <div class="au-lane-body">
+                        <h4>Detailing & BIM Team</h4>
+                        <p>Produces coordinated models and drawings aligned with fabrication and construction workflows.</p>
+                    </div>
                 </div>
-                <div class="counter-box">
-                    <h4>98%</h4>
-                    <p>Client Satisfaction</p>
-                </div>
-                <div class="counter-box">
-                    <h4>50+</h4>
-                    <p>Expert Engineers</p>
+                <div class="au-lane">
+                    <div class="au-lane-head">Support</div>
+                    <div class="au-lane-body">
+                        <h4>Quality & Coordination</h4>
+                        <p>Maintains review controls, issue tracking, and revision integrity across project phases.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="about-cta">
+    <section class="au-section" id="credentials">
         <div class="auto-container">
-            <div class="cta-inner">
-                <h2>Build with a Steel Detailing Partner You Can Rely On</h2>
-                <p>From design development to final fabrication information, VHS Engineering supports project teams with accurate, coordinated, and production-ready engineering outputs.</p>
-                <a href="contact.php" class="theme-btn btn-style-three">
-                    <span class="btn-wrap">
-                        <span class="text-one">Start Your Project <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-                        <span class="text-two">Start Your Project <i><img src="assets/images/icons/arrow-1.svg" alt="" /></i></span>
-                    </span>
-                </a>
+            <div class="au-head">
+                <span class="au-kicker dark">Our Credentials</span>
+                <h2>Standards, Systems, And Engineering Platforms</h2>
+            </div>
+            <div class="au-cred-wrap">
+                <div class="au-standards">
+                    <ul>
+                        <li>ISO 9001-2015 quality management framework integrated into engineering delivery.</li>
+                        <li>Experience with AISC, CISC/CSA, BS/EN, and IS code environments.</li>
+                        <li>Structured review process before issue of drawings and models.</li>
+                        <li>Engineering workflows supported by Tekla Structures, Revit, SDS/2, and AutoCAD.</li>
+                        <li>Coordination continuity through revisions, RFIs, and stakeholder feedback cycles.</li>
+                    </ul>
+                </div>
+                <div class="au-logos">
+                    <div class="au-logo"><img src="images/certifications/1.png" alt="Certification 1" /></div>
+                    <div class="au-logo"><img src="images/certifications/2.png" alt="Certification 2" /></div>
+                    <div class="au-logo"><img src="images/certifications/3.png" alt="Certification 3" /></div>
+                    <div class="au-logo"><img src="images/certifications/4.png" alt="Certification 4" /></div>
+                    <div class="au-logo"><img src="images/certifications/5.png" alt="Certification 5" /></div>
+                    <div class="au-logo"><img src="images/certifications/6.png" alt="Certification 6" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-achievements" id="achievements">
+        <div class="auto-container">
+            <div class="au-head" style="margin-bottom:18px;">
+                <span class="au-kicker light">Our Achievements</span>
+                <h2 style="color:#ffffff;">Delivery Track Record</h2>
+            </div>
+            <div class="au-stats">
+                <div class="au-stat"><h3>2017</h3><p>Established</p></div>
+                <div class="au-stat"><h3>100+</h3><p>Projects Delivered</p></div>
+                <div class="au-stat"><h3>10+</h3><p>Countries Served</p></div>
+                <div class="au-stat"><h3>50+</h3><p>Engineering Experts</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="au-section" id="why-choose-us">
+        <div class="auto-container">
+            <div class="au-head">
+                <span class="au-kicker dark">Why Choose Us</span>
+                <h2>Client Value Matrix</h2>
+                <p>We focus on engineering outcomes that reduce uncertainty, improve coordination confidence, and support predictable execution on real projects.</p>
+            </div>
+            <div class="au-value-matrix">
+                <div class="au-matrix-row">
+                    <div class="au-matrix-key">Technical Reliability</div>
+                    <div class="au-matrix-val">Disciplined quality checks and standards-driven detailing reduce ambiguity in fabrication and site interpretation.</div>
+                </div>
+                <div class="au-matrix-row">
+                    <div class="au-matrix-key">Coordination Clarity</div>
+                    <div class="au-matrix-val">Structured communication with consultants, contractors, and fabricators supports faster issue resolution.</div>
+                </div>
+                <div class="au-matrix-row">
+                    <div class="au-matrix-key">Schedule Discipline</div>
+                    <div class="au-matrix-val">Milestone-focused planning and review cycles help maintain committed delivery timelines.</div>
+                </div>
+                <div class="au-matrix-row">
+                    <div class="au-matrix-key">Long-Term Partnership</div>
+                    <div class="au-matrix-val">Our client relationships are built on consistency, accountability, and practical engineering support.</div>
+                </div>
             </div>
         </div>
     </section>
