@@ -800,6 +800,12 @@
 	.contact-three_info-outer{
 		padding-left:0px;
 	}
+
+	.contact-page-section .contact-three_info-outer{
+		padding-left:20px;
+		padding-top:28px;
+		padding-bottom:28px;
+	}
 	
 	.contact-three{
 		padding-bottom:50px;
