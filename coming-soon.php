@@ -1,9 +1,4 @@
-<?php
-$page_title = 'Coming Soon | VHS Engineering';
-$page_description = 'This page is currently under preparation. VHS Engineering will publish the full content soon.';
-$page_robots = 'noindex, follow';
-include('header.php');
-?>
+
 
 <section class="coming-soon-page">
 	<div class="coming-soon-bg-shape shape-one"></div>
@@ -241,5 +236,3 @@ include('header.php');
 	setInterval(updateCountdown, 1000);
 })();
 </script>
-
-<?php include('footer.php'); ?>
