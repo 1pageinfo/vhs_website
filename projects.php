@@ -43,8 +43,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li>Projects</li>
 				</ul>
-				<div class="page-title_text">Project sectors supported by VHS Engineering with detailing accuracy, engineering discipline, and delivery readiness.</div>
-			</div>
+				</div>
         </div>
     </section>
     <!-- End Page Title -->

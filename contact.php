@@ -45,8 +45,7 @@
 					<li><a href="index.php">Home</a></li>
 					<li>Contact Us</li>
 				</ul>
-				<div class="page-title_text">Get in touch with VHS Engineering for professional structural steel design and detailing services.</div>
-			</div>
+				</div>
         </div>
     </section>
     <!-- End Page Title -->

@@ -195,7 +195,7 @@
 .vhs-theme .news-one.style-two,
 .vhs-theme .contact-three,
 .vhs-theme .sidebar-page-container {
-	background: linear-gradient(180deg, #ffffff 0%, #f3f8fe 100%);
+	background: #ffffff;
 }
 
 .vhs-theme .service-three.style-two p,
@@ -598,7 +598,7 @@
 }
 
 .vhs-theme .faq-one {
-	background: linear-gradient(180deg, #e9f4ff 0%, #ffffff 100%);
+	background: #ffffff;
 }
 
 .vhs-theme .faq-one_accordian-outer {
@@ -648,7 +648,7 @@
 .vhs-theme .sidebar-widget .form-group input,
 .vhs-theme .search-popup .form-group input {
 	border: 1px solid rgba(16,35,58,0.12);
-	background: #f8fbff;
+	background: #ffffff;
 	color: var(--vhs-ink);
 	border-radius: 14px;
 }
@@ -658,7 +658,7 @@
 }
 
 .vhs-theme .contact-info_block-inner {
-	background: #f8fbff;
+	background: #ffffff;
 	border: 1px solid rgba(16,35,58,0.09);
 	border-radius: 18px;
 	padding: 26px 24px 24px;
@@ -718,7 +718,7 @@
 
 .vhs-theme .popular-tags a {
 	border: 1px solid rgba(16,35,58,0.10);
-	background: #f8fbff;
+	background: #ffffff;
 	color: var(--vhs-ink);
 }
 
@@ -942,6 +942,23 @@
 	background: linear-gradient(135deg, #1880da 0%, #38bdf8 100%);
 	color: #ffffff;
 	border-radius: 50%;
+}
+
+/* Force light section backgrounds to white across templates */
+.vhs-theme .premium-service,
+.vhs-theme .projects-showcase,
+.vhs-theme .vhs-process,
+.vhs-theme .vhs-process-strip,
+.vhs-theme .vhs-testimonials,
+.vhs-theme .vhs-cert-badge,
+.vhs-theme .vhs-std-panel,
+.vhs-theme .about-unique .au-nav,
+.vhs-theme .about-unique .au-ring,
+.vhs-theme .about-unique .au-mv-item:first-child,
+.vhs-theme .about-unique .au-lane-head,
+.vhs-theme .about-unique .au-logo,
+.vhs-theme .about-unique .au-matrix-key {
+	background: #ffffff;
 }
 
 @media (max-width: 1199px) {
