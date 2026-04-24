@@ -47,7 +47,6 @@
 					<li><a href="index.php">Home</a></li>
 					<li>404</li>
 				</ul>
-				<div class="page-title_text">Professional engineering services aligned to your project scope, schedule, and quality requirements.</div>
 			</div>
         </div>
     </section>
