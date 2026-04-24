@@ -70,13 +70,13 @@
 <div class="vhs-footer-certs">
 <p class="vhs-footer-cert-title">Certifications &amp; Standards</p>
 <div class="vhs-footer-cert-grid">
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/1.png" alt="Certification 1"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/2.png" alt="Certification 2"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/3.png" alt="Certification 3"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/4.png" alt="Certification 4"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/5.png" alt="Certification 5"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/6.png" alt="Certification 6"></div>
-<div class="vhs-footer-cert-card"><img src="<?php echo $base_path; ?>images/certifications/7.png" alt="Certification 7"></div>
+<div class="vhs-footer-cert-card"><a href="https://www.autodesk.com/products/autocad/overview" target="_blank" rel="noopener noreferrer" aria-label="Certification 1"><img src="<?php echo $base_path; ?>images/certifications/1.png" alt="Certification 1"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://www.tekla.com/products/tekla-structures" target="_blank" rel="noopener noreferrer" aria-label="Certification 2"><img src="<?php echo $base_path; ?>images/certifications/2.png" alt="Certification 2"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://www.cisc-icca.ca/" target="_blank" rel="noopener noreferrer" aria-label="Certification 3"><img src="<?php echo $base_path; ?>images/certifications/3.png" alt="Certification 3"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://www.steel.org.au/" target="_blank" rel="noopener noreferrer" aria-label="Certification 4"><img src="<?php echo $base_path; ?>images/certifications/4.png" alt="Certification 4"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://aisd.org.sa/" target="_blank" rel="noopener noreferrer" aria-label="Certification 5"><img src="<?php echo $base_path; ?>images/certifications/5.png" alt="Certification 5"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://www.aisc.org/" target="_blank" rel="noopener noreferrer" aria-label="Certification 6"><img src="<?php echo $base_path; ?>images/certifications/6.png" alt="Certification 6"></a></div>
+<div class="vhs-footer-cert-card"><a href="https://www.steel-insdag.org" target="_blank" rel="noopener noreferrer" aria-label="Certification 7"><img src="<?php echo $base_path; ?>images/certifications/7.png" alt="Certification 7"></a></div>
 </div>
 </div>
 
