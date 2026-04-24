@@ -68,7 +68,7 @@
 </div>
 
 <div class="vhs-footer-certs">
-<p class="vhs-footer-cert-title">Certifications &amp; Standards</p>
+<p class="vhs-footer-cert-title">Useful Links:</p>
 <div class="vhs-footer-cert-grid">
 <div class="vhs-footer-cert-card"><a href="https://www.autodesk.com/products/autocad/overview" target="_blank" rel="noopener noreferrer" aria-label="Certification 1"><img src="<?php echo $base_path; ?>images/certifications/1.png" alt="Certification 1"></a></div>
 <div class="vhs-footer-cert-card"><a href="https://www.tekla.com/products/tekla-structures" target="_blank" rel="noopener noreferrer" aria-label="Certification 2"><img src="<?php echo $base_path; ?>images/certifications/2.png" alt="Certification 2"></a></div>
