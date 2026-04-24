@@ -41,6 +41,20 @@
 	--color-two-rgb: 193,21,236;
 }
 
+.vhs-theme .main-header .header-lower .logo-box .logo img {
+	width: auto;
+	max-width: 260px;
+	max-height: 74px;
+	object-fit: contain;
+}
+
+@media (max-width: 767px) {
+	.vhs-theme .main-header .header-lower .logo-box .logo img {
+		max-width: 190px;
+		max-height: 56px;
+	}
+}
+
 .vhs-theme .theme-btn.btn-style-one,
 .vhs-theme .theme-btn.btn-style-three {
 	background: linear-gradient(135deg, #1880da 0%, #38bdf8 100%);
